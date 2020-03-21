@@ -20,7 +20,7 @@
         </ListView>
         <Label Content="Map goes in the background&#xD;&#xA;Remove Label when done" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
         <Button Content="Options&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="409,342,0,0" Height="28"/>
-        <Button Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="372,370,0,-2" Height="51" Click="ButtonDiceRoll_Click"/>
+        <Button Name="btnDice" Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="372,370,0,-2" Height="51" Click="ButtonDiceRoll_Click"/>
         <Button Content="End Turn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="717,373,0,0" Height="46" Click="ButtonEndTurn_Click"/>
         <ScrollViewer Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="318" />
     </Grid>

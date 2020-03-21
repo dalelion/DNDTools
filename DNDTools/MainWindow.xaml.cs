@@ -36,16 +36,13 @@ namespace DNDTools {
 
             int diceMax = 20;       //Max value set to 20 as default, will change in the future
 
-            Button btnDiceRoll = (Button)sender;
             Random rngDice = new Random();
             diceRollVal = (int)(rngDice.NextDouble() * diceMax) + 1;
 
-            btnDiceRoll.Content = diceRollVal;
+            btnDice.Content = diceRollVal;
 
             Chatlog.Content = Chatlog.Content + "\nPlayer has rolled a " + diceRollVal;
         }
-
-        private static readonly DependencyProperty changeTextProperty = DependencyProperty.Register("changeText", typeof(String), typeof(MainWindow));
 
         private void ButtinDiceMaxChange_Click(object sender, RoutedEventArgs e)
         {
@@ -63,6 +60,10 @@ namespace DNDTools {
              * Ends the turn for the current player
              * Should reset the dice roll
              */
+
+            btnDice.Content = "Dice Roll";
+
+            Chatlog.Content = Chatlog.Content + "\nPlayer 1's turn has ended. Player 2's turn begins.";
         }
 
     }
