@@ -34,11 +34,13 @@ namespace DNDTools {
              * a message to the chat log
              */
 
-            Button btnDiceRoll = (Button)sender;
-            Random rngDice = new Random(20);        //Set to 20 on default, will change based on selected dice
-            diceRollVal = rngDice.Next() + 1;
+            int diceMax = 20;       //Max value set to 20 as default
 
-            btnDiceRoll.Text = diceRollVal;
+            Button btnDiceRoll = (Button)sender;
+            Random rngDice = new Random();
+            diceRollVal = (int)(rngDice.NextDouble() * diceMax) + 1;
+
+            btnDiceRoll.Content = diceRollVal;
         }
 
         private static readonly DependencyProperty changeTextProperty = DependencyProperty.Register("changeText", typeof(String), typeof(MainWindow));
