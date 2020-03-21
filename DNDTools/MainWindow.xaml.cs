@@ -34,23 +34,36 @@ namespace DNDTools {
              * a message to the chat log
              */
 
-            int diceMax = 20;       //Max value set to 20 as default
+            int diceMax = 20;       //Max value set to 20 as default, will change in the future
 
             Button btnDiceRoll = (Button)sender;
             Random rngDice = new Random();
             diceRollVal = (int)(rngDice.NextDouble() * diceMax) + 1;
 
             btnDiceRoll.Content = diceRollVal;
+
+            Chatlog.Content = Chatlog.Content + "\nPlayer has rolled a " + diceRollVal;
         }
 
         private static readonly DependencyProperty changeTextProperty = DependencyProperty.Register("changeText", typeof(String), typeof(MainWindow));
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ButtinDiceMaxChange_Click(object sender, RoutedEventArgs e)
         {
             /*  
              * Make a new menu open up
              * Allows Player to choose the different types of dice
              */ 
+
+
         }
+
+        private void ButtonEndTurn_Click(object sender, RoutedEventArgs e)
+        {
+            /*
+             * Ends the turn for the current player
+             * Should reset the dice roll
+             */
+        }
+
     }
 }
