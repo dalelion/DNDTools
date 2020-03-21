@@ -18,14 +18,15 @@ namespace DNDTools {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+
+        public int diceRollVal = 1;
+
         public MainWindow() {
             InitializeComponent();
         }
 
-        private int Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonDiceRoll_Click(object sender, RoutedEventArgs e)
         {
-            int diceRollVal = 1;
-
             /*
              * Generates a random value (1-n)
              * where n is the maximum value of the selected die
@@ -33,8 +34,14 @@ namespace DNDTools {
              * a message to the chat log
              */
 
-            return diceRollVal;
+            Button btnDiceRoll = (Button)sender;
+            Random rngDice = new Random(20);        //Set to 20 on default, will change based on selected dice
+            diceRollVal = rngDice.Next() + 1;
+
+            btnDiceRoll.Text = diceRollVal;
         }
+
+        private static readonly DependencyProperty changeTextProperty = DependencyProperty.Register("changeText", typeof(String), typeof(MainWindow));
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
