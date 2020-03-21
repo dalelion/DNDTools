@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="318" Margin="0,396,0,0"/>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="&#xD;&#xA;Dice Roll&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="667,368,0,0" Height="51"/>
+        <ListBox HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="318" Margin="0,350,0,0" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListView HorizontalAlignment="Left" Height="266" VerticalAlignment="Top" Width="100" Margin="692,0,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+            <ListViewItem Content="Player 1" Margin="0" Selected="ListViewItem_Selected"/>
+            <ListViewItem Content="Player 2" Margin="0"/>
+            <ListViewItem Content="Player n" Margin="0"/>
+        </ListView>
+        <Button Content="Options&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="739,340,0,0" Height="28"/>
+        <Label Content="Map goes in the background&#xD;&#xA;Remove Label when done" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
+
     </Grid>
 </Window>
