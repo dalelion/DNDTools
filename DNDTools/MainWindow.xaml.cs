@@ -42,6 +42,7 @@ namespace DNDTools {
             btnDice.Content = diceRollVal;
 
             Chatlog.Content = Chatlog.Content + "\nPlayer has rolled a " + diceRollVal;
+            Chatlog.ScrollToEnd();
         }
 
         private void ButtinDiceMaxChange_Click(object sender, RoutedEventArgs e)
@@ -64,7 +65,7 @@ namespace DNDTools {
             btnDice.Content = "Dice Roll";
 
             Chatlog.Content = Chatlog.Content + "\nPlayer 1's turn has ended. Player 2's turn begins.";
+            Chatlog.ScrollToEnd();
         }
-
     }
 }
