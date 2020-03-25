@@ -106,9 +106,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sabercard.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="tempPlayer.jpg" />
   </ItemGroup>
   <ItemGroup>

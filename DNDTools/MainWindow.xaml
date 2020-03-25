@@ -7,12 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="458" Width="818">
     <Grid Margin="0,0,0,0">
-        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="634" Margin="0,396,0,0"/>
-
-        <Label Content="Map goes in the background&#xD;&#xA;Remove Label when done" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
-        <Button Content="Options&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="0,255,0,0" Height="28"/>
-        <Button Name="btnDice" Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="0,283,0,0" Height="51" Click="ButtonDiceRoll_Click"/>
-        <ScrollViewer Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="634" >
+        <Image HorizontalAlignment="Left" Height="334" VerticalAlignment="Top" Width="639" Source="20151117_Sword-Coast-Map.jpg"/>
+        <TextBox x:Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="634" Margin="0,396,0,0"/>
+        <ScrollViewer x:Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="634" >
             <Border BorderBrush="Black" BorderThickness="1" Height="62" Width="634"/>
         </ScrollViewer>
         <Grid HorizontalAlignment="Left" Height="422" VerticalAlignment="Top" Width="171" Margin="639,0,0,0">
@@ -32,6 +29,7 @@
                 </Label>
             </Border>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="169" Margin="68,67,0,0" VerticalAlignment="Top" Width="424" Source="20151117_Sword-Coast-Map.jpg"/>
+        <Button x:Name="btnDice" Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="0,283,0,0" Height="51" Click="ButtonDiceRoll_Click"/>
+        <Button Content="Options&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="0,255,0,0" Height="28"/>
     </Grid>
 </Window>
