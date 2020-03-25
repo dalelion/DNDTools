@@ -105,5 +105,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sabercard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tempPlayer.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
