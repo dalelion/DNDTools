@@ -6,22 +6,16 @@
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,0,0">
-        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="318" Margin="0,396,0,0"/>
-        <ListView Name="PlayerList" HorizontalAlignment="Left" Height="266" VerticalAlignment="Top" Width="100" Margin="692,0,0,0">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-            <ListViewItem Content="Player 1" Margin="0"/>
-            <ListViewItem Content="Player 2" Margin="0"/>
-            <ListViewItem Content="Player n" Margin="0"/>
-        </ListView>
-        <Label Content="Map goes in the background&#xD;&#xA;Remove Label when done" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
-        <Button Content="Options&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="409,342,0,0" Height="28"/>
-        <Button Name="btnDice" Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="372,370,0,-2" Height="51" Click="ButtonDiceRoll_Click"/>
-        <Button Content="End Turn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="717,373,0,0" Height="46" Click="ButtonEndTurn_Click"/>
-        <ScrollViewer Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="318" />
+  <Grid Margin="0,0,0,0">
+    <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="634" Margin="0,396,0,0"/>
+
+    <Label Content="Map goes in the background&#xD;&#xA;Remove Label when done" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
+    <Button Content="Options&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="0,255,0,0" Height="28"/>
+    <Button Name="btnDice" Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="0,283,0,0" Height="51" Click="ButtonDiceRoll_Click"/>
+    <ScrollViewer Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="634" />
+    <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="153" Margin="639,0,0,0">
+      <Button Content="End Turn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="0,373,0,0" Height="46" Click="ButtonEndTurn_Click"/>
+      <Button Content="End Game" HorizontalAlignment="Left" Margin="80,373,-2,0" VerticalAlignment="Top" Width="75" Height="46" Click="ButtonEndGame_Click"/>
     </Grid>
+  </Grid>
 </Window>
