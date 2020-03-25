@@ -12,8 +12,10 @@ namespace DNDTools
 {
     public partial class endGame : Form
     {
-        public endGame()
+        private MainWindow parent;
+        public endGame(MainWindow window)
         {
+            parent = window;
             InitializeComponent();
         }
 
@@ -24,7 +26,7 @@ namespace DNDTools
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            parent.Close();
         }
     }
 }

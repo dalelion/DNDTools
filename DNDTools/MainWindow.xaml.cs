@@ -73,7 +73,9 @@ namespace DNDTools {
             /*
              * Shows a new window to end the game
              */
-            new endGame().Show();
+            endGame frmEndGame = new endGame(this);
+
+            frmEndGame.Show();
         }
     }
 }
