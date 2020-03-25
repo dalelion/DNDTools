@@ -71,10 +71,9 @@ namespace DNDTools {
         private void ButtonEndGame_Click(object sender, RoutedEventArgs e)
         {
             /*
-             * Ends the game, closes the window for now, might change later
+             * Shows a new window to end the game
              */
-
-            this.Close();
+            new endGame().Show();
         }
     }
 }
