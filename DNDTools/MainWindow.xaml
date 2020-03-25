@@ -32,5 +32,6 @@
                 </Label>
             </Border>
         </Grid>
+        <Image HorizontalAlignment="Left" Height="169" Margin="68,67,0,0" VerticalAlignment="Top" Width="424" Source="20151117_Sword-Coast-Map.jpg"/>
     </Grid>
 </Window>

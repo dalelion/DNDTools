@@ -111,5 +111,8 @@
   <ItemGroup>
     <Resource Include="tempPlayer.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="20151117_Sword-Coast-Map.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
