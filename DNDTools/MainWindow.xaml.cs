@@ -67,5 +67,14 @@ namespace DNDTools {
             Chatlog.Content = Chatlog.Content + "\nPlayer 1's turn has ended. Player 2's turn begins.";
             Chatlog.ScrollToEnd();
         }
+
+        private void ButtonEndGame_Click(object sender, RoutedEventArgs e)
+        {
+            /*
+             * Ends the game, closes the window for now, might change later
+             */
+
+            this.Close();
+        }
     }
 }
