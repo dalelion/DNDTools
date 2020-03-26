@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="458" Width="818">
     <Grid Margin="0,0,0,0" Background="Black">
-        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="541" Margin="6,391,0,0" Background="#FFF3F3F3"/>
+        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="541" Margin="6,391,0,0" Background="#FFF3F3F3" Cursor="IBeam" ToolTip="Type commands here! (ex. /help)" KeyDown="Chatbox_KeyDown"/>
 
         <Image HorizontalAlignment="Left" Height="291" VerticalAlignment="Top" Width="541" Source="20151117_Sword-Coast-Map.jpg" Margin="6,10,0,0"/>
         <Label Content="" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
