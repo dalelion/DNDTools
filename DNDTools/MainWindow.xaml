@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="458" Width="818">
   <Grid Margin="0,0,0,0" Background="Black">
-    <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="541" Margin="6,391,0,0" Background="#FFF3F3F3"/>
+    <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="541" Margin="6,391,0,0" Background="#FFF3F3F3" KeyDown="TextboxChat_KeyDown"/>
 
     <Image HorizontalAlignment="Left" Height="291" VerticalAlignment="Top" Width="541" Source="20151117_Sword-Coast-Map.jpg" Margin="6,10,0,0"/>
     <Label Content="" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
@@ -57,17 +57,9 @@
     </Grid>
     <Grid HorizontalAlignment="Left" Height="109" Margin="552,271,0,0" VerticalAlignment="Top" Width="248" Background="#FFECECEC">
       <Label Content="Game Activities" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="114"/>
-      <Grid HorizontalAlignment="Left" Height="74" Margin="326,52,-306,-17" VerticalAlignment="Top" Width="228" Background="Gainsboro">
-        <Label Content="Player1 accured 30 strength from the Village" Width="228" FontSize="8" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,0" Margin="-314,6,0,0"/>
-        <Label Content="Player3 died" Width="228" FontSize="8" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,0" Margin="0,22,0,0"/>
-        <Label Content="Player1 accured 30 strength from the Village" Width="146" FontSize="8" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,0" Margin="-26,-34,0,0"/>
-      </Grid>
+      <ScrollViewer Name="WrittenNotes" HorizontalAlignment="Left" Height="62" Margin="10,26,0,0" VerticalAlignment="Top" Width="228"/>
+      <TextBox Name="PlayerNotes" HorizontalAlignment="Left" Height="21" Margin="10,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" KeyDown="TextboxNote_KeyDown"/>
     </Grid>
-    <ScrollViewer x:Name="Chatlog_Copy" HorizontalAlignment="Left" Height="85" Margin="557,291,0,0" VerticalAlignment="Top" Width="236" >
-      <Border BorderThickness="1" Height="78" Width="218" RenderTransformOrigin="0.262,0.533" Background="#FFE0E0E0">
-        <Label Content="Player1 deal 30 damage to the Monster&#xD;&#xA;Player1 accured 30 strength from the Village&#xD;&#xA;Player3 died" Width="218" FontSize="8" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,0" Margin="-1,-1,-1,0" Height="64"/>
-      </Border>
-    </ScrollViewer>
 
   </Grid>
 </Window>

@@ -77,5 +77,33 @@ namespace DNDTools {
 
             frmEndGame.Show();
         }
+
+        private void TextboxChat_KeyDown(object sender, KeyEventArgs e)
+        {
+            /* 
+             * Chat system, press Enter to paste onto the chatlog
+             */
+
+            if (e.Key == Key.Enter && Chatbox.Text != "")
+            {
+                Chatlog.Content = Chatlog.Content + "\n" + Chatbox.Text;
+                Chatbox.Text = "";
+                Chatlog.ScrollToEnd();
+            }
+        }
+
+        private void TextboxNote_KeyDown(object sender, KeyEventArgs e)
+        {
+            /* 
+             * Chat system, press Enter to paste onto the chatlog
+             */
+
+            if (e.Key == Key.Enter && PlayerNotes.Text != "")
+            {
+                WrittenNotes.Content = WrittenNotes.Content + "\n" + PlayerNotes.Text;
+                PlayerNotes.Text = "";
+                WrittenNotes.ScrollToEnd();
+            }
+        }
     }
 }
