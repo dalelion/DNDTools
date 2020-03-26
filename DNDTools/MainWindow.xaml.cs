@@ -78,7 +78,7 @@ namespace DNDTools {
             if (e.Key.Equals(Key.Enter)) { //User submitted request
 
                 if ( Chatbox.Text.StartsWith( "/" ) ) { //Request is a command
-                    ProcessCommand( Chatbox.Text.ToLower().Split() );
+                    Chatlog.Content += ProcessCommand( Chatbox.Text.ToLower().Split() );
                 } else { //Request is a chat message
 
                 }
@@ -90,7 +90,7 @@ namespace DNDTools {
 
         }
 
-        private static void ProcessCommand(String[] Command) {
+        private static String ProcessCommand(String[] Command) {
 
             /*switch ( Command[0] ) {
 
@@ -104,19 +104,21 @@ namespace DNDTools {
                     break;
 
             }*/
-
-            if ( Command[0].Equals("/roll") && Command[1].Contains('d')) { //temporary rigging to make only /roll work since other commands arent implemented.
-                String[] DiceRoll = Command[1].Split( 'd' );
-                StringBuilder SB = new StringBuilder();
-                for (int i = 0; i < Int32.Parse(DiceRoll[0]); i++ ) {
-                    //SB.Append();
-                    //TODO: @Noah Display each dice roll seperated by +'s and the sum in the chat log.
-                }
-
+            if (Command[0].Equals("/help")) {
+                return "\nThe command system is still under construction! -> Dice Rolling is available (ex. '/roll 3d6')";
             }
-
-
+            else if ( Command[0].Equals("/roll") && Command[1].Contains('d')) { //temporary rigging to make only /roll work since other commands arent implemented.
+                String[] DiceCommand = Command[1].Split( 'd' );
+                Int32[] NumbersRolled = new Int32[Int32.Parse(DiceCommand[0])];
+                for (int i = 0; i < Int32.Parse(DiceCommand[0]); i++ ) {
+                    NumbersRolled[i] = DiceRoll( Int32.Parse( DiceCommand[1] ) );
+                }
+                return $"\n> Player rolled {Command[1]} -> " + String.Join( " + ", NumbersRolled ) + $" = {NumbersRolled.Sum()}";
+            }
+            return "";
         }
+
+        private static Random DiceRandomizer = new Random( DateTime.Now.Millisecond );
 
         /// <summary>
         /// Rolls dice with specified Number of Sides
@@ -125,7 +127,7 @@ namespace DNDTools {
         /// <returns>Random number between 1 and NumSides</returns>
         private static int DiceRoll(int NumSides) {
 
-            return new Random().Next( 1, NumSides + 1 );
+            return DiceRandomizer.Next( 1, NumSides + 1 );
 
         }
 
