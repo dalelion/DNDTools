@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0,0,0,0">
-        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="318" Margin="0,396,0,0"/>
+        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Margin="0,396,0,0" Cursor="IBeam" ToolTip="Type commands here! (ex. /help)" KeyDown="Chatbox_KeyDown"/>
         <ListView Name="PlayerList" HorizontalAlignment="Left" Height="266" VerticalAlignment="Top" Width="100" Margin="692,0,0,0">
             <ListView.View>
                 <GridView>
