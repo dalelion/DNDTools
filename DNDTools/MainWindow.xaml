@@ -7,40 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="458" Width="818">
     <Grid Margin="0,0,0,0">
-        <TextBox Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="532" Margin="0,396,0,0"/>
-
-        <Image HorizontalAlignment="Left" Height="334" VerticalAlignment="Top" Width="519" Source="20151117_Sword-Coast-Map.jpg" Margin="13,10,0,0"/>
-        <Label Content="" HorizontalAlignment="Left" Height="45" Margin="24,22,0,0" VerticalAlignment="Top" Width="184"/>
-        <Button Content="Options&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="24,273,0,0" Height="28" RenderTransformOrigin="1.041,1.351"/>
-        <Button Name="btnDice" Content="&#xA;Dice Roll&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="24,301,0,0" Height="33" Click="ButtonDiceRoll_Click"/>
-        <ScrollViewer Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="547" >
-            <Border BorderBrush="Black" BorderThickness="1" Height="52" Width="516" RenderTransformOrigin="0.262,0.533"/>
+        <Image HorizontalAlignment="Left" Height="334" VerticalAlignment="Top" Width="639" Source="20151117_Sword-Coast-Map.jpg"/>
+        <TextBox x:Name="Chatbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="634" Margin="0,396,0,0"/>
+        <ScrollViewer x:Name="Chatlog" HorizontalAlignment="Left" Height="62" Margin="0,334,0,0" VerticalAlignment="Top" Width="634" >
+            <Border BorderBrush="Black" BorderThickness="1" Height="62" Width="634"/>
         </ScrollViewer>
-        <Grid HorizontalAlignment="Left" Height="422" VerticalAlignment="Top" Width="240" Margin="570,-3,0,0">
+        <Grid HorizontalAlignment="Left" Height="422" VerticalAlignment="Top" Width="246" Margin="564,-3,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="126*"/>
                 <RowDefinition Height="85*"/>
             </Grid.RowDefinitions>
-            <Button Content="End Turn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="3,124,0,0" Height="46" Click="ButtonEndTurn_Click" Grid.Row="1"/>
-            <Button Content="End Game" HorizontalAlignment="Left" Margin="83,124,0,0" VerticalAlignment="Top" Width="75" Height="46" Click="ButtonEndGame_Click" Grid.Row="1"/>
-            <Border BorderBrush="Black" BorderThickness="1" Height="361" VerticalAlignment="Top" HorizontalAlignment="Right" Width="226" Margin="0,10,10,0" Grid.RowSpan="2">
-                <Grid Margin="9,4,4,224" Background="#FFF3F3F3">
-                    <Image HorizontalAlignment="Left" Height="80" Margin="0,37,0,0" VerticalAlignment="Top" Width="49" Source="636272677995471928.png"/>
-                    <Label Content="Character Summary" HorizontalAlignment="Left" Margin="49,-5,0,0" VerticalAlignment="Top" Width="114"/>
-                    <Label Content="Chacter Name:" HorizontalAlignment="Left" Margin="49,17,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Level:" HorizontalAlignment="Left" Margin="49,39,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Background:" HorizontalAlignment="Left" Margin="49,61,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Aligment:" HorizontalAlignment="Left" Margin="49,83,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Experience Points:" HorizontalAlignment="Left" Margin="49,105,0,0" VerticalAlignment="Top" Width="97" Height="22" FontSize="10"/>
+            <Button Content="End Turn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="3,118.106,0,0" Height="46" Click="ButtonEndTurn_Click" Grid.Row="1"/>
+            <Button Content="End Game" HorizontalAlignment="Left" Margin="83,118.106,0,0" VerticalAlignment="Top" Width="75" Height="46" Click="ButtonEndGame_Click" Grid.Row="1"/>
+            <Border BorderBrush="Black" BorderThickness="1" Height="355" VerticalAlignment="Top" HorizontalAlignment="Right" Width="226" Margin="0,10,10,0" Grid.RowSpan="2">
+                <Grid Margin="9,9,9,234">
+                    <Image HorizontalAlignment="Left" Height="90" Margin="0,20,0,0" VerticalAlignment="Top" Width="72" Source="636272677995471928.png"/>
+                    <Label Content="Character Summary" HorizontalAlignment="Left" Margin="43,0,0,0" VerticalAlignment="Top" Width="114"/>
                 </Grid>
             </Border>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="102" Margin="582,146,0,0" VerticalAlignment="Top" Width="212" Background="#FFEEEEEE">
-            <Label Content="Character Skills" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Top" Width="114"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="107" Margin="582,253,0,0" VerticalAlignment="Top" Width="212" Background="#FFECECEC">
-            <Label Content="Game Activities" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Top" Width="114"/>
-        </Grid>
+        <Label Content="Character Skills" HorizontalAlignment="Left" Margin="628,134,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Game Activities" HorizontalAlignment="Left" Margin="628,217,0,0" VerticalAlignment="Top" Width="114"/>
 
     </Grid>
 </Window>
