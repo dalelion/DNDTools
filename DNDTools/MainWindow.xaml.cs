@@ -75,16 +75,19 @@ namespace DNDTools {
         /// <param name="e">The key that is pressed. We are looking for the enter key, others can be used here</param>
         private void Chatbox_KeyDown( object sender, KeyEventArgs e ) {
 
-            if (e.Key.Equals(Key.Enter)) { //User submitted request
+            if (e.Key.Equals(Key.Enter) && Chatbox.Text != "" ) { //User submitted request
 
                 if ( Chatbox.Text.StartsWith( "/" ) ) { //Request is a command
                     Chatlog.Content += ProcessCommand( Chatbox.Text.ToLower().Split() );
                 } else { //Request is a chat message
-
+                    Chatlog.Content = Chatlog.Content + "\n" + Chatbox.Text; //TODO: @Ruiming this is where I moved your chat events to.
+                    Chatbox.Text = "";
                 }
 
                 //TODO: @Noah - I want to allow users to hit up and be able to reselect old requests they entered during this session. This will require storing this info before clearning.
                 Chatbox.Text = ""; //Clear chatbox after input is dealt with
+
+                Chatlog.ScrollToEnd();
 
             }
 
@@ -140,20 +143,6 @@ namespace DNDTools {
             endGame frmEndGame = new endGame(this);
 
             frmEndGame.Show();
-        }
-
-        private void TextboxChat_KeyDown(object sender, KeyEventArgs e)
-        {
-            /* 
-             * Chat system, press Enter to paste onto the chatlog
-             */
-
-            if (e.Key == Key.Enter && Chatbox.Text != "")
-            {
-                Chatlog.Content = Chatlog.Content + "\n" + Chatbox.Text;
-                Chatbox.Text = "";
-                Chatlog.ScrollToEnd();
-            }
         }
 
         private void TextboxNote_KeyDown(object sender, KeyEventArgs e)

@@ -56,9 +56,9 @@
       <Label Content="23" HorizontalAlignment="Left" Margin="217,38,0,0" VerticalAlignment="Top" Width="21" Height="19" FontSize="8" FontWeight="Bold"/>
     </Grid>
     <Grid HorizontalAlignment="Left" Height="109" Margin="552,271,0,0" VerticalAlignment="Top" Width="248" Background="#FFECECEC">
-      <Label Content="Game Activities" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="114"/>
+      <Label Content="Player Notes" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="114"/>
       <ScrollViewer Name="WrittenNotes" HorizontalAlignment="Left" Height="62" Margin="10,26,0,0" VerticalAlignment="Top" Width="228"/>
-      <TextBox Name="PlayerNotes" HorizontalAlignment="Left" Height="21" Margin="10,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" KeyDown="TextboxNote_KeyDown"/>
+      <TextBox Name="PlayerNotes" HorizontalAlignment="Left" Height="21" Margin="10,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
     </Grid>
 
   </Grid>
