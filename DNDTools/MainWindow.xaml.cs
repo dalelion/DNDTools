@@ -41,7 +41,7 @@ namespace DNDTools {
 
             btnDice.Content = diceRollVal;
 
-            Chatlog.Content = Chatlog.Content + "\nPlayer has rolled a " + diceRollVal;
+            Chatlog.Content = Chatlog.Content + "\n> Player has rolled a " + diceRollVal;
             Chatlog.ScrollToEnd();
         }
 
@@ -64,7 +64,7 @@ namespace DNDTools {
 
             btnDice.Content = "Dice Roll";
 
-            Chatlog.Content = Chatlog.Content + "\nPlayer 1's turn has ended. Player 2's turn begins.";
+            Chatlog.Content = Chatlog.Content + "\n> Player 1's turn has ended. Player 2's turn begins.";
             Chatlog.ScrollToEnd();
         }
 
@@ -129,5 +129,15 @@ namespace DNDTools {
 
         }
 
+
+        private void ButtonEndGame_Click(object sender, RoutedEventArgs e)
+        {
+            /*
+             * Shows a new window to end the game
+             */
+            endGame frmEndGame = new endGame(this);
+
+            frmEndGame.Show();
+        }
     }
 }
