@@ -71,6 +71,24 @@
     <Compile Include="endGame.Designer.cs">
       <DependentUpon>endGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="characterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="characterInfo.Designer.cs">
+      <DependentUpon>characterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diceOptionPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diceOptionPage.Designer.cs">
+      <DependentUpon>diceOptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginPage.Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -90,8 +108,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="characterInfo.resx">
+      <DependentUpon>characterInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="endGame.resx">
       <DependentUpon>endGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diceOptionPage.resx">
+      <DependentUpon>diceOptionPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

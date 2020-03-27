@@ -115,6 +115,7 @@ namespace DNDTools {
                 Int32[] NumbersRolled = new Int32[Int32.Parse(DiceCommand[0])];
                 for (int i = 0; i < Int32.Parse(DiceCommand[0]); i++ ) {
                     NumbersRolled[i] = DiceRoll( Int32.Parse( DiceCommand[1] ) );
+                    
                 }
                 return $"\n> Player rolled {Command[1]} -> " + String.Join( " + ", NumbersRolled ) + $" = {NumbersRolled.Sum()}";
             }
@@ -157,6 +158,20 @@ namespace DNDTools {
                 PlayerNotes.Text = "";
                 WrittenNotes.ScrollToEnd();
             }
+        }
+
+        private void ButtonInfo_Click(object sender, RoutedEventArgs e)
+        {
+            /*
+             * Opens a new window for the player to view their stats, can keep open or close
+             */
+
+            new characterInfo().Show();
+        }
+
+        private void ButtonOption_Click(object sender, RoutedEventArgs e)
+        {
+            new Window().Show();
         }
     }
 }
