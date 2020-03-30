@@ -20,9 +20,26 @@ namespace DNDTools {
     public partial class MainWindow : Window {
 
         public int diceRollVal = 1;
+        Player player = new Player();
 
         public MainWindow() {
             InitializeComponent();
+
+            //Changes the text in Character info to match the Character's Stats
+            StrLbl.Content = "" + player.getBaseStat(0);
+            DexLbl.Content = "" + player.getBaseStat(1);
+            ConLbl.Content = "" + player.getBaseStat(2);
+            IntLbl.Content = "" + player.getBaseStat(3);
+            WisLbl.Content = "" + player.getBaseStat(4);
+            ChaLbl.Content = "" + player.getBaseStat(5);
+
+            //Changes the text in Character info to match the character's changing stats
+            StrVarLbl.Content = "(" + player.getVariableStat(0) + ")";
+            DexVarLbl.Content = "(" + player.getVariableStat(1) + ")";
+            ConVarLbl.Content = "(" + player.getVariableStat(2) + ")";
+            IntVarLbl.Content = "(" + player.getVariableStat(3) + ")";
+            WisVarLbl.Content = "(" + player.getVariableStat(4) + ")";
+            ChaVarLbl.Content = "(" + player.getVariableStat(5) + ")";
         }
 
         private void ButtonDiceRoll_Click(object sender, RoutedEventArgs e)
@@ -41,7 +58,7 @@ namespace DNDTools {
 
             btnDice.Content = diceRollVal;
 
-            Chatlog.Content = Chatlog.Content + "\n> Player has rolled a " + diceRollVal;
+            Chatlog.Content = Chatlog.Content + "\n> " + player.getName() + " has rolled a " + diceRollVal;
             Chatlog.ScrollToEnd();
         }
 
@@ -64,7 +81,7 @@ namespace DNDTools {
 
             btnDice.Content = "Dice Roll";
 
-            Chatlog.Content = Chatlog.Content + "\n> Player 1's turn has ended. Player 2's turn begins.";
+            Chatlog.Content = Chatlog.Content + "\n> " + player.getName() + "'s turn has ended. Player 2's turn begins.";
             Chatlog.ScrollToEnd();
         }
 
@@ -93,7 +110,7 @@ namespace DNDTools {
 
         }
 
-        private static String ProcessCommand(String[] Command) {
+        private String ProcessCommand(String[] Command) {
 
             /*switch ( Command[0] ) {
 
@@ -117,7 +134,7 @@ namespace DNDTools {
                     NumbersRolled[i] = DiceRoll( Int32.Parse( DiceCommand[1] ) );
                     
                 }
-                return $"\n> Player rolled {Command[1]} -> " + String.Join( " + ", NumbersRolled ) + $" = {NumbersRolled.Sum()}";
+                return "\n> " + player.getName() + $" rolled {Command[1]} -> " + String.Join( " + ", NumbersRolled ) + $" = {NumbersRolled.Sum()}";
             }
             return "";
         }
@@ -166,7 +183,7 @@ namespace DNDTools {
              * Opens a new window for the player to view their stats, can keep open or close
              */
 
-            new characterInfo().Show();
+            new characterInfo(this, player).Show();
         }
 
         private void ButtonOption_Click(object sender, RoutedEventArgs e)
