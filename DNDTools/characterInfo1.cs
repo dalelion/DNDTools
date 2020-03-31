@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace DNDTools
 {
-    public partial class characterInfo : Form
+    public partial class characterInfo1 : Form
     {
         private MainWindow parent;
         private Player player;
 
-        public characterInfo(MainWindow myParent, Player myPlayer)
+        public characterInfo1(MainWindow myParent, Player myPlayer)
         {
             InitializeComponent();
 

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DNDTools
 {
-    public partial class endGame : Form
+    public partial class endGame1 : Form
     {
         private MainWindow parent;
-        public endGame(MainWindow window)
+        public endGame1(MainWindow window)
         {
             parent = window;
             InitializeComponent();

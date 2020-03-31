@@ -1,6 +1,6 @@
 ﻿namespace DNDTools
 {
-    partial class endGame
+    partial class endGame1
     {
         /// <summary>
         /// Required designer variable.

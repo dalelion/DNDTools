@@ -1,0 +1,17 @@
+﻿<Window x:Class="DNDTools.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DNDTools"
+        mc:Ignorable="d"
+        Title="Character Info" Height="917.5" Width="512.5">
+    <Grid Margin="0,0,2,1">
+        <Label Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,35,0,0" FontSize="16"/>
+        <Label Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,98,0,0" FontSize="16"/>
+        <Label Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,159,0,0" FontSize="16"/>
+        <Label Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,159,0,0" FontSize="16" RenderTransformOrigin="0.198,-0.226"/>
+        <Label Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,44,0,0" FontSize="16"/>
+        <Label Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,98,0,0" FontSize="16"/>
+    </Grid>
+</Window>

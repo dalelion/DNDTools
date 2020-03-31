@@ -1,6 +1,6 @@
 ﻿namespace DNDTools
 {
-    partial class characterInfo
+    partial class characterInfo1
     {
         /// <summary>
         /// Required designer variable.

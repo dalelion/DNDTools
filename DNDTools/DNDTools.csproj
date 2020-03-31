@@ -38,6 +38,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="endGame.xaml.cs">
+      <DependentUpon>endGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.xaml.cs">
+      <DependentUpon>loginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="diceOptionPage.xaml.cs">
+      <DependentUpon>diceOptionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="characterInfo.xaml.cs">
+      <DependentUpon>characterInfo.xaml</DependentUpon>
+    </Compile>
+    <Page Include="endGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,34 +83,34 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Player.cs" />
-    <Compile Include="endGame.cs">
+    <Compile Include="endGame1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="endGame.Designer.cs">
-      <DependentUpon>endGame.cs</DependentUpon>
+    <Compile Include="endGame1.Designer.cs">
+      <DependentUpon>endGame1.cs</DependentUpon>
     </Compile>
-    <Compile Include="characterInfo.cs">
+    <Compile Include="characterInfo1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="characterInfo.Designer.cs">
-      <DependentUpon>characterInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="diceOptionPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="diceOptionPage.Designer.cs">
-      <DependentUpon>diceOptionPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="loginPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="loginPage.Designer.cs">
-      <DependentUpon>loginPage.cs</DependentUpon>
+    <Compile Include="characterInfo1.Designer.cs">
+      <DependentUpon>characterInfo1.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="loginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="diceOptionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="characterInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -109,14 +126,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="characterInfo.resx">
-      <DependentUpon>characterInfo.cs</DependentUpon>
+    <EmbeddedResource Include="characterInfo1.resx">
+      <DependentUpon>characterInfo1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="endGame.resx">
-      <DependentUpon>endGame.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="diceOptionPage.resx">
-      <DependentUpon>diceOptionPage.cs</DependentUpon>
+    <EmbeddedResource Include="endGame1.resx">
+      <DependentUpon>endGame1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

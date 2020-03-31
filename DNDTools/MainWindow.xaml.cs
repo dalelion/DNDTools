@@ -158,7 +158,7 @@ namespace DNDTools {
             /*
              * Shows a new window to end the game
              */
-            endGame frmEndGame = new endGame(this);
+            endGame1 frmEndGame = new endGame1(this);
 
             frmEndGame.Show();
         }
@@ -183,7 +183,9 @@ namespace DNDTools {
              * Opens a new window for the player to view their stats, can keep open or close
              */
 
-            new characterInfo(this, player).Show();
+            Window characterInfo = new Window3(this, player);
+
+            characterInfo.Show();
         }
 
         private void ButtonOption_Click(object sender, RoutedEventArgs e)
