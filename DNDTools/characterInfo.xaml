@@ -5,13 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
-        Title="Character Info" Height="917.5" Width="512.5">
+        Title="Character Info" Height="917.5" Width="524.5">
     <Grid Margin="0,0,2,1">
-        <Label Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,35,0,0" FontSize="16"/>
-        <Label Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,98,0,0" FontSize="16"/>
-        <Label Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,159,0,0" FontSize="16"/>
-        <Label Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,159,0,0" FontSize="16" RenderTransformOrigin="0.198,-0.226"/>
-        <Label Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,44,0,0" FontSize="16"/>
-        <Label Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,98,0,0" FontSize="16"/>
+        <Label Name="lblStr" Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,34,0,0" FontSize="16"/>
+        <Label Name="lblStrConst" Content="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,39,0,0" FontSize="14"/>
+        <Label Name="lblStrVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="118,38,0,0" Width="43" FontSize="14"/>
+        <Button Name="btStrUp" Content="+" HorizontalAlignment="Left" Margin="13,42,0,0" VerticalAlignment="Top" Width="33" Click="btStrUp_Click"/>
+        <Button Name="btStrDown" Content="-" HorizontalAlignment="Left" Margin="51,42,0,0" VerticalAlignment="Top" Width="33" Click="btStrDown_Click"/>
+
+        <Label Name="lblDex" Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,97,0,0" FontSize="16"/>
+        <Label Name="lblDexConst" Content="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,101,0,0" FontSize="14"/>
+        <Label Name="lblDexVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="118,101,0,0" Width="43" FontSize="14"/>
+        <Button Name="btDexUp" Content="+" HorizontalAlignment="Left" Margin="13,104,0,0" VerticalAlignment="Top" Width="33" Click="btDexUp_Click"/>
+        <Button Name="btDexDown" Content="-" HorizontalAlignment="Left" Margin="51,104,0,0" VerticalAlignment="Top" Width="33" Click="btDexDown_Click"/>
+
+        <Label Name="lblCon" Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,153,0,0" FontSize="16"/>
+        <Label Name="lblConConst" Content="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,158,0,0" FontSize="14"/>
+        <Label Name="lblConVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="118,158,0,0" Width="43" FontSize="14"/>
+        <Button Name="btConUp" Content="+" HorizontalAlignment="Left" Margin="13,161,0,0" VerticalAlignment="Top" Width="33" Click="btConUp_Click"/>
+        <Button Name="btConDown" Content="-" HorizontalAlignment="Left" Margin="51,160,0,0" VerticalAlignment="Top" Width="33" Click="btConDown_Click"/>
+
+        <Label Name="lblInt" Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,38,-7,0" FontSize="16"/>
+        <Label Name="lblIntConst" Content="12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="351,39,0,0" FontSize="14"/>
+        <Label Name="lblIntVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="379,39,0,0" Width="39" FontSize="14"/>
+        <Button Name="btIntUp" Content="+" HorizontalAlignment="Left" Margin="273,42,0,0" VerticalAlignment="Top" Width="33" Click="btIntUp_Click"/>
+        <Button Name="btIntDown" Content="-" HorizontalAlignment="Left" Margin="311,42,0,0" VerticalAlignment="Top" Width="33" Click="btIntDown_Click"/>
+
+        <Label Name="lblWis" Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,101,0,0" FontSize="16"/>
+        <Label Name="lblWisConst" Content="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="351,101,0,0" FontSize="14"/>
+        <Label Name="lblWisVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="379,101,0,0" Width="39" FontSize="14"/>
+        <Button Name="btWisUp" Content="+" HorizontalAlignment="Left" Margin="273,104,0,0" VerticalAlignment="Top" Width="33" Click="btWisUp_Click"/>
+        <Button Name="btWisDown" Content="-" HorizontalAlignment="Left" Margin="311,104,0,0" VerticalAlignment="Top" Width="33" Click="btWisDown_Click"/>
+
+
+        <Label Name="lblCha" Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,153,0,0" FontSize="16"/>
+        <Label Name="lblChaConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="351,157,0,0" FontSize="14"/>
+        <Label Name="lblChaVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="379,158,0,0" Width="39" FontSize="14"/>
+        <Button Name="btChaUp" Content="+" HorizontalAlignment="Left" Margin="273,160,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
+        <Button Name="btChaDown" Content="-" HorizontalAlignment="Left" Margin="311,160,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
     </Grid>
 </Window>

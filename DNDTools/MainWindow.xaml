@@ -47,22 +47,22 @@
             <Label Content="SPEED" HorizontalAlignment="Left" Margin="140,45,0,0" VerticalAlignment="Top" Width="81" Height="21" FontSize="9" FontWeight="Bold"/>
 
             <Label Name="StrLbl" Content="15" HorizontalAlignment="Left" Margin="91,17,0,0" VerticalAlignment="Top" Width="22" Height="21" FontSize="9" FontWeight="Bold"/>
-            <Label Name="StrVarLbl" Content="(0)" HorizontalAlignment="Left" Margin="113,17,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="StrVarLbl" Content="(+2)" HorizontalAlignment="Left" Margin="113,17,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
-            <Label Name="DexLbl" Content="20" HorizontalAlignment="Left" Margin="91,30,0,0" VerticalAlignment="Top" Width="22" Height="22" FontSize="9" FontWeight="Bold"/>
-            <Label Name="DexVarLbl" Content="(0)" HorizontalAlignment="Left" Margin="113,30,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="DexLbl" Content="14" HorizontalAlignment="Left" Margin="91,30,0,0" VerticalAlignment="Top" Width="22" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="DexVarLbl" Content="(+2)" HorizontalAlignment="Left" Margin="113,30,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
-            <Label Name="ConLbl" Content="6" HorizontalAlignment="Left" Margin="91,43,0,0" VerticalAlignment="Top" Width="22" Height="21" FontSize="9" FontWeight="Bold"/>
-            <Label Name="ConVarLbl" Content="(0)" HorizontalAlignment="Left" Margin="113,43,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="ConLbl" Content="13" HorizontalAlignment="Left" Margin="91,42,0,0" VerticalAlignment="Top" Width="22" Height="21" FontSize="9" FontWeight="Bold"/>
+            <Label Name="ConVarLbl" Content="(+1)" HorizontalAlignment="Left" Margin="113,43,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
-            <Label Name="IntLbl" Content="30" HorizontalAlignment="Left" Margin="91,57,0,0" VerticalAlignment="Top" Width="22" Height="20" FontSize="9" FontWeight="Bold"/>
-            <Label Name="IntVarLbl" Content="(0)" HorizontalAlignment="Left" Margin="113,57,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="IntLbl" Content="12&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="91,57,0,0" VerticalAlignment="Top" Width="22" Height="20" FontSize="9" FontWeight="Bold"/>
+            <Label Name="IntVarLbl" Content="(+1)" HorizontalAlignment="Left" Margin="113,57,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
-            <Label Name="WisLbl" Content="25" HorizontalAlignment="Left" Margin="91,69,0,0" VerticalAlignment="Top" Width="22" Height="25" FontSize="9" FontWeight="Bold"/>
+            <Label Name="WisLbl" Content="10" HorizontalAlignment="Left" Margin="91,69,0,0" VerticalAlignment="Top" Width="22" Height="25" FontSize="9" FontWeight="Bold"/>
             <Label Name="WisVarLbl" Content="(0)" HorizontalAlignment="Left" Margin="113,69,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
-            <Label Name="ChaLbl" Content="10" HorizontalAlignment="Left" Margin="91,82,0,0" VerticalAlignment="Top" Width="22" Height="22" FontSize="9" FontWeight="Bold"/>
-            <Label Name="ChaVarLbl" Content="(0)" HorizontalAlignment="Left" Margin="113,82,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="ChaLbl" Content="8" HorizontalAlignment="Left" Margin="91,82,0,0" VerticalAlignment="Top" Width="22" Height="22" FontSize="9" FontWeight="Bold"/>
+            <Label Name="ChaVarLbl" Content="(-1)" HorizontalAlignment="Left" Margin="113,82,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
             <Label Content="7" HorizontalAlignment="Left" Margin="222,17,0,0" VerticalAlignment="Top" Width="16" Height="21" FontSize="9" FontWeight="Bold"/>
             <Label Content="16" HorizontalAlignment="Left" Margin="217,30,0,0" VerticalAlignment="Top" Width="21" Height="20" FontSize="9" FontWeight="Bold"/>
