@@ -153,5 +153,17 @@
   <ItemGroup>
     <Resource Include="636272677995471928.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dungeons-dragons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="73921_Martial_Powers_Cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="unconventional_dnd_character_commissions_by_rhlpixels_dcoczae-fullview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tumblr_prkgg59PN61sgibvjo1_400.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

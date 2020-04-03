@@ -117,29 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="636272677995471928" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\636272677995471928.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2649defe625da3bb301529b2d39e763b" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2649defe625da3bb301529b2d39e763b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20151117_Sword-Coast-Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20151117_Sword-Coast-Map.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tumblr_prkgg59PN61sgibvjo1_400" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tumblr_prkgg59PN61sgibvjo1_400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="73921_Martial_Powers_Cards" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\73921_Martial_Powers_Cards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dungeons-dragons" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dungeons-dragons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unconventional_dnd_character_commissions_by_rhlpixels_dcoczae-fullview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unconventional_dnd_character_commissions_by_rhlpixels_dcoczae-fullview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
