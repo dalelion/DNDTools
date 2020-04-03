@@ -34,12 +34,35 @@ namespace DNDTools {
             ChaLbl.Content = "" + player.getBaseStat(5);
 
             //Changes the text in Character info to match the character's changing stats
-            StrVarLbl.Content = "(" + player.getVariableStat(0) + ")";
-            DexVarLbl.Content = "(" + player.getVariableStat(1) + ")";
-            ConVarLbl.Content = "(" + player.getVariableStat(2) + ")";
-            IntVarLbl.Content = "(" + player.getVariableStat(3) + ")";
-            WisVarLbl.Content = "(" + player.getVariableStat(4) + ")";
-            ChaVarLbl.Content = "(" + player.getVariableStat(5) + ")";
+            if(player.getVariableStat(0) > 0)
+                StrVarLbl.Content = "(+" + player.getVariableStat(0) + ")";
+            else
+                StrVarLbl.Content = "(" + player.getVariableStat(0) + ")";
+
+            if(player.getVariableStat(1) > 0)
+                DexVarLbl.Content = "(+" + player.getVariableStat(1) + ")";
+            else
+                DexVarLbl.Content = "(" + player.getVariableStat(1) + ")";
+
+            if (player.getVariableStat(2) > 0)
+                ConVarLbl.Content = "(+" + player.getVariableStat(2) + ")";
+            else
+                ConVarLbl.Content = "(" + player.getVariableStat(2) + ")";
+
+            if (player.getVariableStat(3) > 0)
+                IntVarLbl.Content = "(+" + player.getVariableStat(3) + ")";
+            else
+                IntVarLbl.Content = "(" + player.getVariableStat(3) + ")";
+
+            if (player.getVariableStat(3) > 0)
+                WisVarLbl.Content = "(+" + player.getVariableStat(4) + ")";
+            else
+                WisVarLbl.Content = "(" + player.getVariableStat(4) + ")";
+
+            if (player.getVariableStat(5) > 0)
+                ChaVarLbl.Content = "(+" + player.getVariableStat(5) + ")";
+            else
+                ChaVarLbl.Content = "(" + player.getVariableStat(5) + ")";
         }
 
         private void ButtonDiceRoll_Click(object sender, RoutedEventArgs e)

@@ -11,7 +11,7 @@ namespace DNDTools
         String name = "";
         String playerClass = "";
         int[] playerBaseStat = {15, 14, 13, 12, 10, 8};
-        int[] playerVariableStat = {0, 0, 0, 0, 0, 0};
+        int[] playerVariableStat = {2, 2, 1, 1, 0, -1};
 
         //Deafult Constructor
         public Player()
@@ -32,9 +32,15 @@ namespace DNDTools
         {
             return name;
         }
+
         public int getBaseStat(int pos)
         {
             return playerBaseStat[pos];
+        }
+
+        public void setBaseStat(int pos, int value)
+        {
+            playerBaseStat[pos] = value;
         }
 
         public int getVariableStat(int pos)
