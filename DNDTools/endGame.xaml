@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="endGame" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Do you really want to leave this game?&#xD;&#xA;&#xD;&#xA;&#x9;The game will close" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,113,0,0" FontSize="24" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontWeight="Bold" Height="116" Width="451"/>
+        <Button x:Name="btBack" Content="No, let me&#xA;  go back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="180,261,0,0" Click="ButtonBack_Click" Height="58" FontSize="20"/>
+        <Button x:Name="btLeave" Content="Yes, let me&#xD;&#xA;    leave" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="481,261,0,0" Height="58" FontSize="20" Click="ButtonLeave_Click"/>
+
     </Grid>
 </Window>

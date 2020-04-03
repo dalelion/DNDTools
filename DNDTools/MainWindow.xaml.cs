@@ -181,9 +181,9 @@ namespace DNDTools {
             /*
              * Shows a new window to end the game
              */
-            endGame1 frmEndGame = new endGame1(this);
+            endGame endGameWindow = new endGame(this);
 
-            frmEndGame.Show();
+            endGameWindow.Show();
         }
 
         private void TextboxNote_KeyDown(object sender, KeyEventArgs e)

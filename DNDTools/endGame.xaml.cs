@@ -19,9 +19,24 @@ namespace DNDTools
     /// </summary>
     public partial class endGame : Window
     {
-        public endGame()
+        MainWindow parent;
+
+        public endGame(MainWindow myParent)
         {
             InitializeComponent();
+
+            parent = myParent;
+        }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonLeave_Click(object sender, RoutedEventArgs e)
+        {
+            parent.Close();
+            this.Close();
         }
     }
 }
