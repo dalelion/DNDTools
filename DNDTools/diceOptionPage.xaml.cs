@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace DNDTools
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for DiceOption.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class DiceOption : Window
     {
-        public Window2()
+        public DiceOption()
         {
             InitializeComponent();
         }

@@ -34,11 +34,12 @@
             <Image Margin="526,348,99,-6" Source="tumblr_prkgg59PN61sgibvjo1_400.png" Stretch="Fill" Opacity="0.8"/>
             <Label Content="Input Room Number:" HorizontalAlignment="Left" Margin="159,113,0,0" VerticalAlignment="Top" Width="422" Foreground="#FFA4A4A4" FontSize="40"/>
             <Label Content="Create a Room:" HorizontalAlignment="Left" Margin="159,240,0,0" VerticalAlignment="Top" Width="305" Foreground="#FFA4A4A4" FontSize="40"/>
-            <TextBlock HorizontalAlignment="Left" Margin="185,180,0,0" TextWrapping="Wrap" Text="Type your username here" VerticalAlignment="Top" Width="242" Height="33" Foreground="#FF767676" Background="WhiteSmoke" RenderTransformOrigin="0,1" LineHeight="16" FontSize="18"/>
             <Button Content="Home" HorizontalAlignment="Left" Margin="345,348,0,0" VerticalAlignment="Top" Width="98" Height="33"/>
             <Button Content="Connect" HorizontalAlignment="Left" Margin="494,180,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525" Click="Button_Click"/>
             <Button Content="Create" HorizontalAlignment="Left" Margin="494,256,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525"/>
+            <TextBox Name="RoomCode" HorizontalAlignment="Left" Height="33" Margin="159,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
         </Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

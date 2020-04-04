@@ -1,29 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace DNDTools
 {
     /// <summary>
-    /// Interaction logic for Window3.xaml
+    /// Interaction logic for CharacterInfo.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class CharacterInfo : Window
     {
 
-        MainWindow parent;
+        MainGame parent;
         Player player;
 
-        public Window3(MainWindow myParent, Player myPlayer)
+        public CharacterInfo(MainGame myParent, Player myPlayer)
         {
             InitializeComponent();
 

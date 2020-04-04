@@ -19,9 +19,9 @@ namespace DNDTools
     /// </summary>
     public partial class endGame : Window
     {
-        MainWindow parent;
+        MainGame parent;
 
-        public endGame(MainWindow myParent)
+        public endGame(MainGame myParent)
         {
             InitializeComponent();
 

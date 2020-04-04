@@ -26,7 +26,14 @@ namespace DNDTools
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            String code = RoomCode.Text;
 
+            if (code.CompareTo("1234") == 0)
+            {
+                MainGame game = new MainGame();
+                game.Show();
+                this.Close();
+            }
         }
     }
 }
