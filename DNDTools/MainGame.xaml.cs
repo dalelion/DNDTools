@@ -87,16 +87,6 @@ namespace DNDTools {
             Chatlog.ScrollToEnd();
         }
 
-        private void ButtinDiceMaxChange_Click(object sender, RoutedEventArgs e)
-        {
-            /*  
-             * Make a new menu open up
-             * Allows Player to choose the different types of dice
-             */ 
-
-
-        }
-
         private void ButtonEndTurn_Click(object sender, RoutedEventArgs e)
         {
             /*
@@ -183,9 +173,11 @@ namespace DNDTools {
             /*
              * Shows a new window to end the game
              */
+
             endGame endGameWindow = new endGame(this);
 
             endGameWindow.Show();
+            btnEnd.IsEnabled = false;
         }
 
         private void TextboxNote_KeyDown(object sender, KeyEventArgs e)

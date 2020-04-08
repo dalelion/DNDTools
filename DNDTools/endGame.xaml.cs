@@ -30,6 +30,8 @@ namespace DNDTools
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
+            parent.btnEnd.IsEnabled = true;
+
             this.Close();
         }
 

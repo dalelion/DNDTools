@@ -19,12 +19,21 @@ namespace DNDTools
     /// </summary>
     public partial class RoomPage : Window
     {
+        MainWindow parent;
+
         public RoomPage()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public RoomPage(MainWindow myParent)
+        {
+            InitializeComponent();
+
+            parent = myParent;
+        }
+
+        private void ButtonConnect_Click(object sender, RoutedEventArgs e)
         {
             String code = RoomCode.Text;
 
@@ -32,8 +41,16 @@ namespace DNDTools
             {
                 MainGame game = new MainGame();
                 game.Show();
+                parent.Close();
                 this.Close();
             }
+        }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            parent.Show();
+
+            this.Close();
         }
     }
 }

@@ -37,10 +37,16 @@ namespace DNDTools
             {
                 canLogIn = true;
 
-                RoomPage room = new RoomPage();
+                RoomPage room = new RoomPage(this);
                 room.Show();
-                this.Close();
+                this.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void KeyboardEnter_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                ButtonLogIn_Click(sender, e);
         }
 
         public Boolean canLogin()

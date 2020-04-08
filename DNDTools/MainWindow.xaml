@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
-        Title="Log In" Height="450" Width="800">
+        Title="Log In" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Background="Black">
             <Image Margin="158,0,142,201" Source="dungeons-dragons.jpg" Stretch="Fill"/>
@@ -35,8 +35,8 @@
             <Label Content="User Name:" HorizontalAlignment="Left" Margin="282,261,0,0" VerticalAlignment="Top" Width="96" Foreground="#FFA4A4A4"/>
             <Label Content="Password:" HorizontalAlignment="Left" Margin="282,311,0,0" VerticalAlignment="Top" Width="96" Foreground="#FFA4A4A4"/>
             <Button Content="Login" HorizontalAlignment="Left" Margin="355,379,0,0" VerticalAlignment="Top" Width="75" Click="ButtonLogIn_Click"/>
-            <TextBox Name="UserName" HorizontalAlignment="Left" Height="23" Margin="282,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
-            <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="282,337,0,0" VerticalAlignment="Top" Width="236"/>
+            <TextBox Name="UserName" HorizontalAlignment="Left" Height="23" Margin="282,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
+            <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="282,337,0,0" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
         </Grid>
 
     </Grid>

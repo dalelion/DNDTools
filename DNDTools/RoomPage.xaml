@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
-        Title="RoomPage" Height="450" Width="800">
+        Title="RoomPage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Background="Black">
             <Image Margin="263,0,255,306" Source="dungeons-dragons.jpg" Stretch="Fill"/>
@@ -34,12 +34,11 @@
             <Image Margin="526,348,99,-6" Source="tumblr_prkgg59PN61sgibvjo1_400.png" Stretch="Fill" Opacity="0.8"/>
             <Label Content="Input Room Number:" HorizontalAlignment="Left" Margin="159,113,0,0" VerticalAlignment="Top" Width="422" Foreground="#FFA4A4A4" FontSize="40"/>
             <Label Content="Create a Room:" HorizontalAlignment="Left" Margin="159,240,0,0" VerticalAlignment="Top" Width="305" Foreground="#FFA4A4A4" FontSize="40"/>
-            <Button Content="Home" HorizontalAlignment="Left" Margin="345,348,0,0" VerticalAlignment="Top" Width="98" Height="33"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Margin="494,180,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525" Click="Button_Click"/>
+            <Button Name="btnBack" Content="Home" HorizontalAlignment="Left" Margin="345,348,0,0" VerticalAlignment="Top" Width="98" Height="33" Click="ButtonBack_Click"/>
+            <Button Name="btnConnect" Content="Connect" HorizontalAlignment="Left" Margin="494,180,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525" Click="ButtonConnect_Click"/>
             <Button Content="Create" HorizontalAlignment="Left" Margin="494,256,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525"/>
             <TextBox Name="RoomCode" HorizontalAlignment="Left" Height="33" Margin="159,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
         </Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
