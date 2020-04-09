@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
         Title="CreateRoom" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="Black">
+        <Image Margin="294,27,283,301" Source="dungeons-dragons.jpg" Stretch="Fill"/>
+        <Image Margin="573,29,-116,43" Source="73921_Martial_Powers_Cards.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.3">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="36.839"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="-111,18,565,55" Source="73921_Martial_Powers_Cards.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.3">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-29.295"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Create a Room" HorizontalAlignment="Center" Margin="228,107,210,248" VerticalAlignment="Center" Foreground="White" Width="354" FontSize="45" FontWeight="Bold" Height="64"/>
+        <Image Margin="0,330,533,-11" Source="unconventional_dnd_character_commissions_by_rhlpixels_dcoczae-fullview.png" Stretch="Fill" Opacity="0.8"/>
+        <Image Margin="526,348,99,-6" Source="tumblr_prkgg59PN61sgibvjo1_400.png" Stretch="Fill" Opacity="0.8"/>
+        <Label Content="Type in the room name:" HorizontalAlignment="Left" Margin="254,210,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
+        <Label Content="Zoom settings:" HorizontalAlignment="Left" Margin="254,280,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
+        <PasswordBox x:Name="PassWord" HorizontalAlignment="Left" Margin="258,302,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
+        <PasswordBox x:Name="PassWord_Copy" HorizontalAlignment="Left" Margin="258,232,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
+        <Button HorizontalAlignment="Left" Margin="351,380,0,0" VerticalAlignment="Top" Width="86" Click="ButtonLogIn_Click" Height="19" Content="Return"/>
+        <Button HorizontalAlignment="Left" Margin="350,340,0,0" VerticalAlignment="Top" Width="87" Click="ButtonLogIn_Click" Height="32" Content="Create"/>
+
     </Grid>
 </Window>

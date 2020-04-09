@@ -34,9 +34,11 @@
             <Image Margin="526,348,99,-6" Source="tumblr_prkgg59PN61sgibvjo1_400.png" Stretch="Fill" Opacity="0.8"/>
             <Label Content="User Name:" HorizontalAlignment="Left" Margin="282,261,0,0" VerticalAlignment="Top" Width="96" Foreground="#FFA4A4A4"/>
             <Label Content="Password:" HorizontalAlignment="Left" Margin="282,311,0,0" VerticalAlignment="Top" Width="96" Foreground="#FFA4A4A4"/>
-            <Button Content="Login" HorizontalAlignment="Left" Margin="355,379,0,0" VerticalAlignment="Top" Width="75" Click="ButtonLogIn_Click"/>
+            <Button Content="Login" HorizontalAlignment="Left" Margin="357,365,0,0" VerticalAlignment="Top" Width="82" Click="ButtonLogIn_Click" Height="24"/>
             <TextBox Name="UserName" HorizontalAlignment="Left" Height="23" Margin="282,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
             <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="282,337,0,0" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
+            <Label Content="Don't have an account? Sign in here!" HorizontalAlignment="Left" Margin="282,394,0,0" VerticalAlignment="Top" Width="220" Foreground="#FFA4A4A4"/>
+            <Button Content="Login" HorizontalAlignment="Left" Margin="273,441,0,-46" VerticalAlignment="Top" Width="245" Click="ButtonLogIn_Click" Height="24" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </Grid>
 
     </Grid>
