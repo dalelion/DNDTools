@@ -23,5 +23,16 @@ namespace DNDTools
         {
             InitializeComponent();
         }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        { 
+            
+        }
+
+        private void KeyboardEnter_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                ButtonCreate_Click(sender, e);
+        }
     }
 }

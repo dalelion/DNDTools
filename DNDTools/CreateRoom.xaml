@@ -33,10 +33,10 @@
         <Image Margin="526,348,99,-6" Source="tumblr_prkgg59PN61sgibvjo1_400.png" Stretch="Fill" Opacity="0.8"/>
         <Label Content="Type in the room name:" HorizontalAlignment="Left" Margin="254,210,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
         <Label Content="Zoom settings:" HorizontalAlignment="Left" Margin="254,280,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
-        <PasswordBox x:Name="PassWord" HorizontalAlignment="Left" Margin="258,302,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
-        <PasswordBox x:Name="PassWord_Copy" HorizontalAlignment="Left" Margin="258,232,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
-        <Button HorizontalAlignment="Left" Margin="351,380,0,0" VerticalAlignment="Top" Width="86" Click="ButtonLogIn_Click" Height="19" Content="Return"/>
-        <Button HorizontalAlignment="Left" Margin="350,340,0,0" VerticalAlignment="Top" Width="87" Click="ButtonLogIn_Click" Height="32" Content="Create"/>
+        <TextBox Name="UserName" HorizontalAlignment="Left" Margin="258,232,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
+        <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="258,302,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
+        <Button HorizontalAlignment="Left" Margin="351,380,0,0" VerticalAlignment="Top" Width="86" Click="ButtonCreate_Click" Height="19" Content="Return"/>
+        <Button HorizontalAlignment="Left" Margin="350,340,0,0" VerticalAlignment="Top" Width="87" Click="ButtonCreate_Click" Height="32" Content="Create"/>
 
     </Grid>
 </Window>
