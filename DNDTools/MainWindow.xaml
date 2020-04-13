@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
-        Title="Log In" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Log In" Height="454.25" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Background="Black">
+        <Grid HorizontalAlignment="Left" Height="423" VerticalAlignment="Top" Width="792" Background="Black">
             <Image Margin="158,0,142,201" Source="dungeons-dragons.jpg" Stretch="Fill"/>
             <Image Margin="573,29,-116,43" Source="73921_Martial_Powers_Cards.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.3">
                 <Image.RenderTransform>
@@ -37,7 +37,9 @@
             <Button Content="Login" HorizontalAlignment="Left" Margin="357,365,0,0" VerticalAlignment="Top" Width="82" Click="ButtonLogIn_Click" Height="24"/>
             <TextBox Name="UserName" HorizontalAlignment="Left" Height="23" Margin="282,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
             <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="282,337,0,0" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
-            <Label Content="Don't have an account? Sign in here!" HorizontalAlignment="Left" Margin="282,394,0,0" VerticalAlignment="Top" Width="220" Foreground="#FFA4A4A4"/>
+            <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="282,394,0,0" VerticalAlignment="Top" Width="136" Foreground="#FFA4A4A4"/>
+            <Button Content="Login" HorizontalAlignment="Left" Margin="273,441,0,-46" VerticalAlignment="Top" Width="245" Click="ButtonLogIn_Click" Height="24" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Label Name="lblLink" Content="Sign Up Here!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,394,0,-3" Height="28" Width="85" Foreground="#FFA4A4A4" MouseDoubleClick="LabelLink_Click" />
         </Grid>
 
     </Grid>

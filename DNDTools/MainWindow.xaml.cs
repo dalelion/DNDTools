@@ -49,6 +49,14 @@ namespace DNDTools
                 ButtonLogIn_Click(sender, e);
         }
 
+        private void LabelLink_Click(object sender, RoutedEventArgs e)
+        {
+            CreateAccount newAccount = new CreateAccount();
+
+            this.Visibility = Visibility.Hidden;
+            newAccount.Show();
+        }
+
         public Boolean canLogin()
         {
             return canLogIn;
