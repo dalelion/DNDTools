@@ -38,7 +38,6 @@
             <TextBox Name="UserName" HorizontalAlignment="Left" Height="23" Margin="282,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
             <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="282,337,0,0" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
             <Label Content="Don't have an account? Sign in here!" HorizontalAlignment="Left" Margin="282,394,0,0" VerticalAlignment="Top" Width="220" Foreground="#FFA4A4A4"/>
-            <Button Content="Login" HorizontalAlignment="Left" Margin="273,441,0,-46" VerticalAlignment="Top" Width="245" Click="ButtonLogIn_Click" Height="24" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </Grid>
 
     </Grid>

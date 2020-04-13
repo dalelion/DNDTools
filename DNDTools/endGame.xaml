@@ -6,10 +6,12 @@
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
         Title="endGame" Height="338.115" Width="587.295" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Label Content="Do you really want to leave this game?&#xD;&#xA;&#xD;&#xA;&#x9;The game will close" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,57,0,0" FontSize="24" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontWeight="Bold" Height="116" Width="451"/>
+    <Grid Background="Black">
+        <Label Content="We need heros to save the world!&#xA;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="77,96,0,0" FontSize="25" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontWeight="Bold" Height="57" Width="478" Foreground="White"/>
         <Button x:Name="btBack" Content="No, let me&#xA;  go back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="78,205,0,0" Click="ButtonBack_Click" Height="58" FontSize="20"/>
-        <Button x:Name="btLeave" Content="Yes, let me&#xD;&#xA;    leave" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="379,205,0,0" Height="58" FontSize="20" Click="ButtonLeave_Click"/>
+        <Button x:Name="btLeave" Content="Yes, let me&#xD;&#xA;    leave" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="366,205,0,0" Height="58" FontSize="20" Click="ButtonLeave_Click"/>
+        <Label Content="&#xA;Are you sure you want to quit the game?" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="188,143,49,121" FontSize="10" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontWeight="Bold" Height="43" Width="342" Foreground="White"/>
+        <Image Margin="189,10,175,206" Source="dungeons-dragons.jpg" Stretch="Fill"/>
 
     </Grid>
 </Window>

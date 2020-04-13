@@ -24,11 +24,11 @@
                 <Grid Margin="-1,-14,-11,239" Background="#FFF3F3F3" HorizontalAlignment="Right" Width="284">
                     <Image HorizontalAlignment="Left" Height="80" Margin="2,25,0,0" VerticalAlignment="Top" Width="49" Source="636272677995471928.png"/>
                     <Label Content="Character Summary" HorizontalAlignment="Left" Margin="83,-5,0,0" VerticalAlignment="Top" Width="133"/>
-                    <Label Content="Chacter Name:" HorizontalAlignment="Left" Margin="51,17,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Level:" HorizontalAlignment="Left" Margin="51,39,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Background:" HorizontalAlignment="Left" Margin="51,61,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Aligment:" HorizontalAlignment="Left" Margin="51,83,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
-                    <Label Content="Experience Points:" HorizontalAlignment="Left" Margin="51,105,0,0" VerticalAlignment="Top" Width="97" Height="22" FontSize="10"/>
+                    <Label Content="Chacter Name:" HorizontalAlignment="Left" Margin="51,16,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
+                    <Label Content="Level:" HorizontalAlignment="Left" Margin="51,36,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
+                    <Label Content="Background:" HorizontalAlignment="Left" Margin="51,57,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
+                    <Label Content="Aligment:" HorizontalAlignment="Left" Margin="51,77,0,0" VerticalAlignment="Top" Width="81" Height="22" FontSize="10"/>
+                    <Label Content="Experience Points:" HorizontalAlignment="Left" Margin="51,98,0,0" VerticalAlignment="Top" Width="97" Height="22" FontSize="8"/>
                 </Grid>
             </Border>
         </Grid>
@@ -73,6 +73,11 @@
             <Label Content="Player Notes" HorizontalAlignment="Left" Margin="92,0,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.999,0.523"/>
             <ScrollViewer Name="WrittenNotes" HorizontalAlignment="Left" Height="62" Margin="10,26,0,0" VerticalAlignment="Top" Width="264"/>
             <TextBox Name="PlayerNotes" HorizontalAlignment="Left" Height="21" Margin="10,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
+            <TextBox x:Name="PlayerNotes_Copy" HorizontalAlignment="Left" Height="15" Margin="138,-257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
+            <TextBox x:Name="PlayerNotes_Copy1" HorizontalAlignment="Left" Height="15" Margin="138,-237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
+            <TextBox x:Name="PlayerNotes_Copy2" HorizontalAlignment="Left" Height="15" Margin="138,-217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
+            <TextBox x:Name="PlayerNotes_Copy3" HorizontalAlignment="Left" Height="15" Margin="138,-197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
+            <TextBox x:Name="PlayerNotes_Copy4" HorizontalAlignment="Left" Height="15" Margin="138,-177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" KeyDown="TextboxNote_KeyDown" ToolTip="Enter Notes here! They will eventually be saved from session to session."/>
         </Grid>
 
     </Grid>
