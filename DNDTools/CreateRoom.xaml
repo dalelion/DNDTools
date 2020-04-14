@@ -31,17 +31,11 @@
         <Label Content="Create a Room" HorizontalAlignment="Center" Margin="228,107,210,248" VerticalAlignment="Center" Foreground="White" Width="354" FontSize="45" FontWeight="Bold" Height="64"/>
         <Image Margin="0,330,533,-11" Source="unconventional_dnd_character_commissions_by_rhlpixels_dcoczae-fullview.png" Stretch="Fill" Opacity="0.8"/>
         <Image Margin="526,348,99,-6" Source="tumblr_prkgg59PN61sgibvjo1_400.png" Stretch="Fill" Opacity="0.8"/>
-        <Label Content="Type in the room name:" HorizontalAlignment="Left" Margin="254,210,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
-        <Label Content="Number of players:" HorizontalAlignment="Left" Margin="254,264,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
-        
-        <TextBox Name="RoomName" HorizontalAlignment="Left" Margin="258,232,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
-        <TextBox Name="playerLimit" HorizontalAlignment="Left" Margin="438,267,0,0" VerticalAlignment="Top" Width="104" KeyDown="KeyboardEnter_KeyDown" Height="17"/>
-        <Button HorizontalAlignment="Left" Margin="351,383,0,0" VerticalAlignment="Top" Width="86" Click="ButtonReturn_Click" Height="19" Content="Return"/>
-        <Button HorizontalAlignment="Left" Margin="350,345,0,0" VerticalAlignment="Top" Width="87" Click="ButtonCreate_Click" Height="32" Content="Create"/>
-        <Label Content="Map:" HorizontalAlignment="Left" Margin="254,289,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
-        <TextBox Name="mapSelection" HorizontalAlignment="Left" Margin="438,294,0,0" VerticalAlignment="Top" Width="104" KeyDown="KeyboardEnter_KeyDown" Height="17"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="438,319,0,0" VerticalAlignment="Top"/>
-        <Label Content="Other things:" HorizontalAlignment="Left" Margin="254,313,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
+        <Label Content="Type in the room name:" HorizontalAlignment="Left" Margin="254,232,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
+
+        <TextBox Name="RoomName" HorizontalAlignment="Left" Margin="254,257,0,0" VerticalAlignment="Top" Width="177" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
+        <Button HorizontalAlignment="Left" Margin="363,358,0,0" VerticalAlignment="Top" Width="86" Click="ButtonReturn_Click" Height="32" Content="Return"/>
+        <Button HorizontalAlignment="Left" Margin="454,257,0,0" VerticalAlignment="Top" Width="87" Click="ButtonCreate_Click" Height="22" Content="Create"/>
 
     </Grid>
 </Window>
