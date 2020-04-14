@@ -19,15 +19,41 @@ namespace DNDTools
     /// </summary>
     public partial class CreateAccount : Window
     {
-        public CreateAccount()
+        MainWindow parent;
+
+        public CreateAccount(MainWindow myParent)
         {
             InitializeComponent();
+
+            parent = myParent;
         }
 
         private void ButtonLogIn_Click(object sender, RoutedEventArgs e)
         {
+            if (UserName.Text.Length == 0 || PassWord.Password.Length == 0)
+            {
+                MessageBox.Show("At least one parameter is missing.", "Cannot create account", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else 
+            {
+                string[] account = { UserName.Text, PassWord.Password};
+                System.IO.File.WriteAllLines(@"C: /Users/" + Environment.UserName + "/source/repos/DNDTools/Account.txt", account);
+
+                MessageBox.Show("Your account is created", "Account finished", MessageBoxButton.OK, MessageBoxImage.None);
+
+                parent.Visibility = Visibility.Visible;
+                this.Close();
+            }
+
 
         }
+
+        private void ButtonReturn_Click(object sender, RoutedEventArgs e)
+        {
+            parent.Visibility = Visibility.Visible;
+            this.Close();
+        }
+
 
         private void KeyboardEnter_KeyDown(object sender, KeyEventArgs e)
         {

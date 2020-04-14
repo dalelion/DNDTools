@@ -19,20 +19,31 @@ namespace DNDTools
     /// </summary>
     public partial class CreateRoom : Window
     {
-        public CreateRoom()
+        RoomPage parent;
+
+        public CreateRoom(RoomPage myParent)
         {
             InitializeComponent();
+
+            parent = myParent;
         }
 
-        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
-        { 
-            
+        private void ButtonReturn_Click(object sender, RoutedEventArgs e)
+        {
+            parent.Show();
+
+            this.Close();
         }
 
         private void KeyboardEnter_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
                 ButtonCreate_Click(sender, e);
+        }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

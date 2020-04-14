@@ -52,5 +52,14 @@ namespace DNDTools
 
             this.Close();
         }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            CreateRoom newRoom = new CreateRoom(this);
+
+            newRoom.Show();
+
+            this.Visibility = Visibility.Hidden;
+        }
     }
 }

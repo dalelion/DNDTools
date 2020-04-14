@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DNDTools"
         mc:Ignorable="d"
-        Title="CreateAccount" Height="450" Width="800">
+        Title="CreateAccount" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Background="Black">
             <Image Margin="294,27,283,301" Source="dungeons-dragons.jpg" Stretch="Fill"/>
@@ -36,7 +36,7 @@
             <Label Content="Create your Password:" HorizontalAlignment="Left" Margin="254,280,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
             <TextBox Name="UserName" HorizontalAlignment="Left" Margin="258,232,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
             <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="258,302,0,0" VerticalAlignment="Top" Width="284" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
-            <Button HorizontalAlignment="Left" Margin="351,380,0,0" VerticalAlignment="Top" Width="86" Click="ButtonLogIn_Click" Height="19" Content="Return"/>
+            <Button HorizontalAlignment="Left" Margin="351,380,0,0" VerticalAlignment="Top" Width="86" Click="ButtonReturn_Click" Height="19" Content="Return"/>
             <Button HorizontalAlignment="Left" Margin="350,340,0,0" VerticalAlignment="Top" Width="87" Click="ButtonLogIn_Click" Height="32" Content="Create"/>
         </Grid>
 

@@ -33,13 +33,23 @@ namespace DNDTools
             userName = UserName.Text;
             passWord = PassWord.Password;
 
-            if (userName.CompareTo("Silver") == 0 && passWord.CompareTo("test") == 0)
+            string[] savedAccount = System.IO.File.ReadAllLines(@"C: /Users/" + Environment.UserName + "/source/repos/DNDTools/Account.txt");
+
+            if (userName.CompareTo(savedAccount[0]) == 0 && passWord.CompareTo(savedAccount[1]) == 0)
             {
                 canLogIn = true;
 
                 RoomPage room = new RoomPage(this);
                 room.Show();
                 this.Visibility = Visibility.Hidden;
+            }
+            else if (userName.CompareTo(savedAccount[0]) != 0)
+            {
+                MessageBox.Show("Username is incorrect.", "Cannot login", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else 
+            {
+                MessageBox.Show("Password is incorrect.", "Cannot login", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -51,7 +61,7 @@ namespace DNDTools
 
         private void LabelLink_Click(object sender, RoutedEventArgs e)
         {
-            CreateAccount newAccount = new CreateAccount();
+            CreateAccount newAccount = new CreateAccount(this);
 
             this.Visibility = Visibility.Hidden;
             newAccount.Show();
