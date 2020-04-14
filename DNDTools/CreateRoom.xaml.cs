@@ -43,7 +43,8 @@ namespace DNDTools
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
         {
-
+            string[] account = { RoomName.Text , lblRoomCodeValue.ContentStringFormat };
+            System.IO.File.WriteAllLines(@"C: /Users/" + Environment.UserName + "/source/repos/DNDTools/Account.txt", account);
         }
     }
 }
