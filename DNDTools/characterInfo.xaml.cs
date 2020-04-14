@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 
 namespace DNDTools
 {
@@ -33,6 +34,10 @@ namespace DNDTools
             lblChaVar.Content = parent.ChaVarLbl.Content;
 
             //Numbers in parenthesis increase/decrease every 2 values, the MAIN values should be controlled by the player
+
+            txtClass.Text = player.getClass();
+            txtRace.Text = player.getRace();
+            txtFaction.Text = player.getFaction();
         }
 
         private void btStrUp_Click(object sender, RoutedEventArgs e)
@@ -467,9 +472,17 @@ namespace DNDTools
             }
         }
 
-        private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        private void TextBox_TextChanged(object sender, RoutedEventArgs e)
         {
+            player.setClass(txtClass.Text);
+            player.setRace(txtRace.Text);
+            player.setFaction(txtFaction.Text);
+        }
 
+        private void KeyboardEnter_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                TextBox_TextChanged(sender, e);
         }
     }
 }

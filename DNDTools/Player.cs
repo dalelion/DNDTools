@@ -10,6 +10,9 @@ namespace DNDTools
     {
         String name = "";
         String playerClass = "";
+        String playerRace = "";
+        String playerFaction = "";
+
         int[] playerBaseStat = {15, 14, 13, 12, 10, 8};
         int[] playerVariableStat = {2, 2, 1, 1, 0, -1};
 
@@ -17,6 +20,12 @@ namespace DNDTools
         public Player()
         {
             name = "Adventurer";
+            playerClass = "Paladin";
+        }
+
+        public Player(string myName)
+        {
+            name = myName;
             playerClass = "Paladin";
         }
 
@@ -51,6 +60,36 @@ namespace DNDTools
         public void setVariableStat(int pos, int value)
         {
             playerVariableStat[pos] = value;
+        }
+
+        public String getClass()
+        {
+            return playerClass;
+        }
+
+        public void setClass(String myClass)
+        {
+            playerClass = myClass;
+        }
+
+        public String getRace()
+        {
+            return playerRace;
+        }
+
+        public void setRace(String myRace)
+        {
+            playerRace = myRace;
+        }
+
+        public String getFaction()
+        {
+            return playerFaction;
+        }
+
+        public void setFaction(String myFaction)
+        {
+            playerFaction = myFaction;
         }
     }
 }

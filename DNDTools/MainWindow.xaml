@@ -39,7 +39,7 @@
             <PasswordBox Name="PassWord" HorizontalAlignment="Left" Margin="282,337,0,0" VerticalAlignment="Top" Width="236" KeyDown="KeyboardEnter_KeyDown"/>
             <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="282,394,0,0" VerticalAlignment="Top" Width="136" Foreground="#FFA4A4A4"/>
             <Button Content="Login" HorizontalAlignment="Left" Margin="273,441,0,-46" VerticalAlignment="Top" Width="245" Click="ButtonLogIn_Click" Height="24" Background="{x:Null}" BorderBrush="{x:Null}"/>
-            <Label Name="lblLink" Content="Sign Up Here!" HorizontalAlignment="Left" Margin="418,394,0,1" Width="85" Foreground="#FFA4A4A4" MouseDoubleClick="LabelLink_Click" />
+            <Label Name="lblLink" Content="Sign Up Here!" HorizontalAlignment="Left" Margin="418,394,0,1" Width="85" Foreground="#FFA4A4A4" MouseDoubleClick="LabelLink_Click" ToolTip="Double click here"/>
             <Label Content="Version 2.4" HorizontalAlignment="Left" Margin="716,401,-8,-7" VerticalAlignment="Top" Height="29" Width="84" Foreground="#FF9E9E9E"/>
         </Grid>
 

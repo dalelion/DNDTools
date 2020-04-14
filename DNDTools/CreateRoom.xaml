@@ -36,9 +36,8 @@
         <TextBox Name="RoomName" HorizontalAlignment="Left" Margin="254,257,0,0" VerticalAlignment="Top" Width="177" KeyDown="KeyboardEnter_KeyDown" Height="22"/>
         <Button HorizontalAlignment="Left" Margin="363,358,0,0" VerticalAlignment="Top" Width="86" Click="ButtonReturn_Click" Height="32" Content="Return"/>
         <Button HorizontalAlignment="Left" Margin="454,257,0,0" VerticalAlignment="Top" Width="87" Click="ButtonCreate_Click" Height="22" Content="Create"/>
-        <Label Content="Type in the room name:" HorizontalAlignment="Left" Margin="254,210,0,0" VerticalAlignment="Top" Width="145" Foreground="#FFA4A4A4" Height="33"/>
         <Label Name="lblRoomCode" Content="Your Room Code is: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="258,285,0,0" Foreground="#FFA4A4A4" Height="29" Width="141" FontSize="14"/>
-        <Label x:Name="lblRoomCodeValue" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="399,287,0,0"  Foreground="#FFA4A4A4" FontSize="13"/>
+        <Label Name="lblRoomCodeValue" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="399,287,0,0"  Foreground="#FFA4A4A4" FontSize="13" Width="75"/>
 
     </Grid>
 </Window>

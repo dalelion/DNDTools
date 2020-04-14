@@ -19,13 +19,17 @@ namespace DNDTools {
     /// </summary>
     public partial class MainGame : Window {
 
-        public int diceRollVal = 1;
-        Player player = new Player();
+        static string[] savedAccount = System.IO.File.ReadAllLines(@"C: /Users/" + Environment.UserName + "/source/repos/DNDTools/Account.txt");
+        private int diceRollVal = 1;
+
+        Player player = new Player(savedAccount[0]);
 
         public MainGame() {
 
                 InitializeComponent();
-
+                
+                this.Title = "Welcome to " + player.getName() + "'s Dungeon";
+                
                 //Changes the text in Character info to match the Character's Stats
                 StrLbl.Content = "" + player.getBaseStat(0);
                 DexLbl.Content = "" + player.getBaseStat(1);

@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Character Info" Height="917.5" Width="524.5">
     <Grid Margin="0,0,2,1" Background="#FF0A0A0A">
+
         <Label Name="lblStr" Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,305,0,0" FontSize="16" Foreground="#FFE4E4E4"/>
         <Label Name="lblStrConst" Content="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,307,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
         <Label Name="lblStrVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="121,306,0,0" Width="43" FontSize="14" Foreground="#FFE4E4E4"/>
@@ -43,118 +44,145 @@
         <Label Name="lblChaVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,487,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4"/>
         <Button Name="btChaUp" Content="+" HorizontalAlignment="Left" Margin="16,489,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
         <Button Name="btChaDown" Content="-" HorizontalAlignment="Left" Margin="54,489,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
-        <Label x:Name="lblCha_Copy" Content="ArmorClass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,521,0,0" FontSize="16" Width="119" Foreground="#FFE4E4E4"/>
-        <Label x:Name="lblChaConst_Copy" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,523,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
-        <Label x:Name="lblChaVar_Copy" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,524,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4"/>
-        <Button x:Name="btChaUp_Copy" Content="+" HorizontalAlignment="Left" Margin="16,526,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
-        <Button x:Name="btChaDown_Copy" Content="-" HorizontalAlignment="Left" Margin="54,526,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
-        <Label x:Name="lblCha_Copy1" Content="Initiative" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,556,0,0" FontSize="16" Width="119" Foreground="#FFE4E4E4"/>
-        <Label x:Name="lblChaConst_Copy1" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,557,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
-        <Label x:Name="lblChaVar_Copy1" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,558,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4"/>
-        <Button x:Name="btChaUp_Copy1" Content="+" HorizontalAlignment="Left" Margin="16,560,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
-        <Button x:Name="btChaDown_Copy1" Content="-" HorizontalAlignment="Left" Margin="54,560,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
-        <Label x:Name="lblCha_Copy2" Content="Speed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,591,0,0" FontSize="16" Width="119" Foreground="#FFE4E4E4"/>
-        <Label x:Name="lblChaConst_Copy2" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,592,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
-        <Label x:Name="lblChaVar_Copy2" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,593,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4"/>
-        <Button x:Name="btChaUp_Copy2" Content="+" HorizontalAlignment="Left" Margin="16,595,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
-        <Button x:Name="btChaDown_Copy2" Content="-" HorizontalAlignment="Left" Margin="54,595,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
-        <Label x:Name="lblCha_Copy3" Content="Acrobatics&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,304,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy3" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,306,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy3" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,305,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy3" Content="+" HorizontalAlignment="Left" Margin="276,307,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy4" Content="-" HorizontalAlignment="Left" Margin="301,307,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy4" Content="Arcana&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,344,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy4" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,346,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy4" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,345,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy5" Content="+" HorizontalAlignment="Left" Margin="276,347,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy6" Content="-" HorizontalAlignment="Left" Margin="301,347,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy5" Content="Animal Handling&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,324,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy5" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,326,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy5" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,325,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy7" Content="+" HorizontalAlignment="Left" Margin="276,327,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy8" Content="-" HorizontalAlignment="Left" Margin="301,327,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy6" Content="Athletics&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,364,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy6" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,366,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy6" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,365,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy9" Content="+" HorizontalAlignment="Left" Margin="276,367,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy10" Content="-" HorizontalAlignment="Left" Margin="301,367,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy7" Content="Deception&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,384,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy7" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,386,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy7" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,385,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy11" Content="+" HorizontalAlignment="Left" Margin="276,387,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy12" Content="-" HorizontalAlignment="Left" Margin="301,387,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy8" Content="History&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,404,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,406,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy8" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,405,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy13" Content="+" HorizontalAlignment="Left" Margin="276,407,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy14" Content="-" HorizontalAlignment="Left" Margin="301,407,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy9" Content="Insight" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,424,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy9" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,426,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy9" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,425,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy15" Content="+" HorizontalAlignment="Left" Margin="276,427,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy16" Content="-" HorizontalAlignment="Left" Margin="301,427,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy10" Content="Intimidation&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,444,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy10" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,446,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy10" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,445,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy17" Content="+" HorizontalAlignment="Left" Margin="276,447,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy18" Content="-" HorizontalAlignment="Left" Margin="301,447,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy11" Content="Investigation&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,464,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy11" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,466,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy11" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,465,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy19" Content="+" HorizontalAlignment="Left" Margin="276,467,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy20" Content="-" HorizontalAlignment="Left" Margin="301,467,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy12" Content="Medicine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,484,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy12" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,486,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy12" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,485,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy21" Content="+" HorizontalAlignment="Left" Margin="276,487,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy22" Content="-" HorizontalAlignment="Left" Margin="301,487,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy13" Content="Nature&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,504,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy13" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,506,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy13" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,505,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy23" Content="+" HorizontalAlignment="Left" Margin="276,507,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy24" Content="-" HorizontalAlignment="Left" Margin="301,507,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy14" Content="Perception" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,524,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy14" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,526,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy14" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,525,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy25" Content="+" HorizontalAlignment="Left" Margin="276,527,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy26" Content="-" HorizontalAlignment="Left" Margin="301,527,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy15" Content="Performance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,543,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy15" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,545,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy15" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,544,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy27" Content="+" HorizontalAlignment="Left" Margin="276,546,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy28" Content="-" HorizontalAlignment="Left" Margin="301,546,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy16" Content="Pesuasion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,563,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy16" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,565,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy16" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,564,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy29" Content="+" HorizontalAlignment="Left" Margin="276,566,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy30" Content="-" HorizontalAlignment="Left" Margin="301,566,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy17" Content="Religion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,582,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy17" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,584,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy17" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,583,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy31" Content="+" HorizontalAlignment="Left" Margin="276,585,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy32" Content="-" HorizontalAlignment="Left" Margin="301,585,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy18" Content="Sleight of Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,602,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy18" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,604,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy18" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,603,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy33" Content="+" HorizontalAlignment="Left" Margin="276,605,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy34" Content="-" HorizontalAlignment="Left" Margin="301,605,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy19" Content="Stealth" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,622,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy19" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,624,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy19" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,623,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy35" Content="+" HorizontalAlignment="Left" Margin="276,625,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy36" Content="-" HorizontalAlignment="Left" Margin="301,625,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label x:Name="lblCha_Copy20" Content="Survival" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,642,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
-        <Label x:Name="lblChaConst_Copy20" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,644,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
-        <Label x:Name="lblChaVar_Copy20" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,643,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
-        <Button x:Name="btChaUp_Copy37" Content="+" HorizontalAlignment="Left" Margin="276,645,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Button x:Name="btChaUp_Copy38" Content="-" HorizontalAlignment="Left" Margin="301,645,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
-        <Label Content="Character Information" HorizontalAlignment="Left" Margin="75,117,0,0" VerticalAlignment="Top" Width="365" Foreground="#FFF7F7F7" FontSize="30" FontWeight="Bold"/>
+
+
+        <Label Name="lblArmor" Content="Armor Class" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,553,0,0" FontSize="16" Width="119" Foreground="#FFE4E4E4"/>
+        <Label Name="lblArmorConst" Content="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,555,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
+        <Label Name="lblArmorVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,556,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4" Visibility="Hidden"/>
+        <Button Name="btArmorUp" Content="+" HorizontalAlignment="Left" Margin="16,558,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
+        <Button Name="btArmorDown" Content="-" HorizontalAlignment="Left" Margin="54,558,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
+
+        <Label Name="lblInitiative" Content="Initiative" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,588,0,0" FontSize="16" Width="119" Foreground="#FFE4E4E4"/>
+        <Label Name="lblInitiativeConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,589,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
+        <Label Name="lblInitiativeVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,590,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4" Visibility="Hidden"/>
+        <Button Name="btInitiativeUp" Content="+" HorizontalAlignment="Left" Margin="16,592,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
+        <Button Name="btInitiativeDown" Content="-" HorizontalAlignment="Left" Margin="54,592,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
+
+        <Label Name="lblSpeed" Content="Speed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,623,0,0" FontSize="16" Width="119" Foreground="#FFE4E4E4"/>
+        <Label Name="lblSpeedConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,624,0,0" FontSize="14" Foreground="#FFE4E4E4"/>
+        <Label Name="lblSpeedVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,625,0,0" Width="39" FontSize="14" Foreground="#FFE4E4E4" Visibility="Hidden"/>
+        <Button Name="btSpeedUp" Content="+" HorizontalAlignment="Left" Margin="16,627,0,0" VerticalAlignment="Top" Width="33" Click="btChaUp_Click"/>
+        <Button Name="btSpeedDown" Content="-" HorizontalAlignment="Left" Margin="54,627,0,0" VerticalAlignment="Top" Width="33" Click="btChaDown_Click"/>
+
+        <Label Name="lblAcrobatics" Content="Acrobatics&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,304,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblAcrobaticsConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,306,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblAcrobaticsVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,305,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btAcrobaticsUp" Content="+" HorizontalAlignment="Left" Margin="276,307,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btAcrobaticsDown" Content="-" HorizontalAlignment="Left" Margin="301,307,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblAnimal" Content="Animal Handling&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,324,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblAnimalConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,326,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblAnimalVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,325,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btAnimalUp" Content="+" HorizontalAlignment="Left" Margin="276,327,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btAnimalDown" Content="-" HorizontalAlignment="Left" Margin="301,327,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblArcana" Content="Arcana&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,344,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblArcanaConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,346,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblArcanaVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,345,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btArcanaUp" Content="+" HorizontalAlignment="Left" Margin="276,347,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btArcanaDown" Content="-" HorizontalAlignment="Left" Margin="301,347,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblAthletics" Content="Athletics&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,364,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblAthleticsConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,366,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblAthleticsVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,365,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btAthleticsUp" Content="+" HorizontalAlignment="Left" Margin="276,367,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btAthleticsDown" Content="-" HorizontalAlignment="Left" Margin="301,367,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblDeception" Content="Deception&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,384,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblDeceptionConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,386,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblDeceptionVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,385,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btDeceptionUp" Content="+" HorizontalAlignment="Left" Margin="276,387,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btDeceptionDown" Content="-" HorizontalAlignment="Left" Margin="301,387,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblHistory" Content="History&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,404,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblHistoryConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,406,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblHistoryVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,405,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btHistoryUp" Content="+" HorizontalAlignment="Left" Margin="276,407,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btHistoryDown" Content="-" HorizontalAlignment="Left" Margin="301,407,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblInsight" Content="Insight" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,424,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblInsightConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,426,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblInsightVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,425,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btInsightUp" Content="+" HorizontalAlignment="Left" Margin="276,427,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btInsightDown" Content="-" HorizontalAlignment="Left" Margin="301,427,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblIntimidation" Content="Intimidation&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,444,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblIntimidationConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,446,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblIntimidationVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,445,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btIntimidationUp" Content="+" HorizontalAlignment="Left" Margin="276,447,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btCIntimidationDown" Content="-" HorizontalAlignment="Left" Margin="301,447,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblInvestigation" Content="Investigation&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,464,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblInvestigationConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,466,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblInvestigationVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,465,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btInvestigationUp" Content="+" HorizontalAlignment="Left" Margin="276,467,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btInvestigationDown" Content="-" HorizontalAlignment="Left" Margin="301,467,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblMedicine" Content="Medicine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,484,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblMedicineConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,486,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblMedicineVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,485,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btMedicineUp" Content="+" HorizontalAlignment="Left" Margin="276,487,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btMedicineDown" Content="-" HorizontalAlignment="Left" Margin="301,487,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblNature" Content="Nature&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,504,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblNatureConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,506,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblNatureVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,505,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btNatureUp" Content="+" HorizontalAlignment="Left" Margin="276,507,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btNatureDown" Content="-" HorizontalAlignment="Left" Margin="301,507,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblPerception" Content="Perception" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,524,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblPerceptionConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,526,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblPerceptionVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,525,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btPerceptionUp" Content="+" HorizontalAlignment="Left" Margin="276,527,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btPerceptionDown" Content="-" HorizontalAlignment="Left" Margin="301,527,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblPerformance" Content="Performance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,543,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblPerformanceConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,545,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblPerformanceVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,544,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btPerformanceUp" Content="+" HorizontalAlignment="Left" Margin="276,546,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btPerformanceDown" Content="-" HorizontalAlignment="Left" Margin="301,546,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblPersuasion" Content="Pesuasion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,563,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblPersuasionConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,565,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblPersuasionVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,564,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btPersuasionUp" Content="+" HorizontalAlignment="Left" Margin="276,566,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btPersuasionDown" Content="-" HorizontalAlignment="Left" Margin="301,566,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblReligion" Content="Religion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,582,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblReligionConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,584,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblReligionVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,583,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btReligionUp" Content="+" HorizontalAlignment="Left" Margin="276,585,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btReligionDown" Content="-" HorizontalAlignment="Left" Margin="301,585,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblSleight" Content="Sleight of Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,602,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblSleightConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,604,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblSleightVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,603,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btSleightUp" Content="+" HorizontalAlignment="Left" Margin="276,605,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btSleightDown" Content="-" HorizontalAlignment="Left" Margin="301,605,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblStealth" Content="Stealth" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,622,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblStealthConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,624,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblStealthVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,623,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btStealthUp" Content="+" HorizontalAlignment="Left" Margin="276,625,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btStealthDown" Content="-" HorizontalAlignment="Left" Margin="301,625,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Name="lblSurvival" Content="Survival" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,642,0,0" FontSize="13" Width="119" Height="29" Foreground="#FFECECEC"/>
+        <Label Name="lblSurvivalConst" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,644,0,0" Height="25" Width="20" Foreground="#FFD6D6D6"/>
+        <Label Name="lblSurvivalVar" Content="(0)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="357,643,0,0" Width="35" Height="24" Foreground="#FFD6D6D6"/>
+        <Button Name="btSurvivalUp" Content="+" HorizontalAlignment="Left" Margin="276,645,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+        <Button Name="btSurvival" Content="-" HorizontalAlignment="Left" Margin="301,645,0,0" VerticalAlignment="Top" Width="20" Click="btChaUp_Click" Height="20"/>
+
+        <Label Content="Character Information" HorizontalAlignment="Left" Margin="99,117,0,0" VerticalAlignment="Top" Width="322" Foreground="#FFF7F7F7" FontSize="30" FontWeight="Bold"/>
         <Image Margin="137,10,139,774" Source="dungeons-dragons.jpg" Stretch="Fill"/>
-        <Label x:Name="lblStr_Copy" Content="Class &amp; Level:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,198,0,0" FontSize="16" Foreground="#FFE4E4E4" Width="138"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="207,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" TextChanged="TextBox_TextChanged"/>
-        <Label x:Name="lblStr_Copy1" Content="Race:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,222,0,0" FontSize="16" Foreground="#FFE4E4E4" Width="138"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="207,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" TextChanged="TextBox_TextChanged"/>
-        <Label x:Name="lblStr_Copy2" Content="Faction:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,246,0,0" FontSize="16" Foreground="#FFE4E4E4" Width="138"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="207,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" TextChanged="TextBox_TextChanged"/>
+        <Label Name="lblClass" Content="Class:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,194,0,0" FontSize="16" Foreground="#FFE4E4E4" Width="86"/>
+        <TextBox Name="txtClass" HorizontalAlignment="Left" Height="19" Margin="197,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" TextChanged="TextBox_TextChanged" KeyDown="KeyboardEnter_KeyDown"/>
+        
+        <Label Name="lblRace" Content="Race:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,218,0,0" FontSize="16" Foreground="#FFE4E4E4" Width="86"/>
+        <TextBox Name="txtRace" HorizontalAlignment="Left" Height="19" Margin="197,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" TextChanged="TextBox_TextChanged" KeyDown="KeyboardEnter_KeyDown"/>
+        
+        <Label Name="lblFaction" Content="Faction:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,244,0,0" FontSize="16" Foreground="#FFE4E4E4" Width="86"/>
+        <TextBox Name="txtFaction" HorizontalAlignment="Left" Height="19" Margin="197,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" TextChanged="TextBox_TextChanged" KeyDown="KeyboardEnter_KeyDown"/>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="3" Stroke="Black" VerticalAlignment="Top" Width="223" Margin="16,530,0,0"/>
     </Grid>
 </Window>

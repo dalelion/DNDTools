@@ -37,12 +37,18 @@ namespace DNDTools
         {
             String code = RoomCode.Text;
 
-            if (code.CompareTo("1234") == 0)
+            string[] savedRoom = System.IO.File.ReadAllLines(@"C: /Users/" + Environment.UserName + "/source/repos/DNDTools/Room.txt");
+
+            if (code.CompareTo(savedRoom[1]) == 0)
             {
                 MainGame game = new MainGame();
                 game.Show();
                 parent.Close();
                 this.Close();
+            }
+            else 
+            {
+                MessageBox.Show("The room code does not exist.", "Failed to connect to room", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -59,7 +65,8 @@ namespace DNDTools
 
             newRoom.Show();
 
-            this.Visibility = Visibility.Hidden;
+            this.Close();
+            parent.Close();
         }
     }
 }
