@@ -40,7 +40,6 @@ namespace DNDTools
             //Numbers in parenthesis increase/decrease every 2 values, the MAIN values should be controlled by the player
 
             lblArmorConst.Content = parent.lblArmor.Content;
-            lblInitiativeConst.Content = player.getVariableStat(1);
             lblSpeedConst.Content = parent.lblSpeed.Content;
 
             if (player.getVariableStat(0) > 0)
@@ -57,12 +56,14 @@ namespace DNDTools
                 lblAcrobaticsConst.Content = "+" + player.getVariableStat(1);
                 lblSleightConst.Content = "+" + player.getVariableStat(1);
                 lblStealthConst.Content = "+" + player.getVariableStat(1);
+                lblInitiativeConst.Content = "+" + player.getVariableStat(1);
             }
             else
             { 
                 lblAcrobaticsConst.Content = player.getVariableStat(1);
                 lblSleightConst.Content = player.getVariableStat(1);
                 lblStealthConst.Content = player.getVariableStat(1);
+                lblInitiativeConst.Content = player.getVariableStat(1);
             }
 
             if (player.getVariableStat(3) > 0)
@@ -225,9 +226,11 @@ namespace DNDTools
                     lblAcrobaticsConst.Content = "+" + tempVar;
                     lblSleightConst.Content = "+" + tempVar;
                     lblStealthConst.Content = "+" + tempVar;
+                    lblInitiativeConst.Content = "+" + tempVar;
 
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
+                    parent.lblInitiative.Content = lblInitiativeConst.Content;
                 }
                 else
                 {
@@ -237,9 +240,11 @@ namespace DNDTools
                     lblAcrobaticsConst.Content = tempVar;
                     lblSleightConst.Content = tempVar;
                     lblStealthConst.Content = tempVar;
+                    lblInitiativeConst.Content = tempVar;
 
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
+                    parent.lblInitiative.Content = lblInitiativeConst.Content;
                 }
             }
         }
@@ -269,9 +274,11 @@ namespace DNDTools
                     lblAcrobaticsConst.Content = "+" + tempVar;
                     lblSleightConst.Content = "+" + tempVar;
                     lblStealthConst.Content = "+" + tempVar;
+                    lblInitiativeConst.Content = "+" + tempVar;
 
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
+                    parent.lblInitiative.Content = lblInitiativeConst.Content;
                 }
                 else
                 {
@@ -281,9 +288,11 @@ namespace DNDTools
                     lblAcrobaticsConst.Content = tempVar;
                     lblSleightConst.Content = tempVar;
                     lblStealthConst.Content = tempVar;
+                    lblInitiativeConst.Content = tempVar;
 
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
+                    parent.lblInitiative.Content = lblInitiativeConst.Content;
                 }
             }
         }

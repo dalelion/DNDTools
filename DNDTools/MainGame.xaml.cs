@@ -39,7 +39,6 @@ namespace DNDTools {
                 ChaLbl.Content = "" + player.getBaseStat(5);
 
                 lblArmor.Content = player.getArmor();
-                lblInitiative.Content = player.getVariableStat(1);
                 lblSpeed.Content = player.getSpeed();
 
                 //Changes the text in Character info to match the character's changing stats
@@ -49,9 +48,15 @@ namespace DNDTools {
                     StrVarLbl.Content = "(" + player.getVariableStat(0) + ")";
 
                 if (player.getVariableStat(1) > 0)
+                {
                     DexVarLbl.Content = "(+" + player.getVariableStat(1) + ")";
+                    lblInitiative.Content = "+" + player.getVariableStat(1);
+                }
                 else
+                {
                     DexVarLbl.Content = "(" + player.getVariableStat(1) + ")";
+                    lblInitiative.Content = player.getVariableStat(1);
+                }
 
                 if (player.getVariableStat(2) > 0)
                     ConVarLbl.Content = "(+" + player.getVariableStat(2) + ")";
