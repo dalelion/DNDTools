@@ -63,9 +63,9 @@
             <Label Name="ChaLbl" Content="8" HorizontalAlignment="Left" Margin="91,82,0,0" VerticalAlignment="Top" Width="22" Height="22" FontSize="9" FontWeight="Bold"/>
             <Label Name="ChaVarLbl" Content="(-1)" HorizontalAlignment="Left" Margin="113,82,0,0" VerticalAlignment="Top" Width="36" Height="22" FontSize="9" FontWeight="Bold"/>
 
-            <Label Content="7" HorizontalAlignment="Left" Margin="222,17,0,0" VerticalAlignment="Top" Width="16" Height="21" FontSize="9" FontWeight="Bold"/>
-            <Label Content="16" HorizontalAlignment="Left" Margin="217,30,0,0" VerticalAlignment="Top" Width="21" Height="20" FontSize="9" FontWeight="Bold"/>
-            <Label Content="23" HorizontalAlignment="Left" Margin="217,45,0,0" VerticalAlignment="Top" Width="21" Height="21" FontSize="9" FontWeight="Bold"/>
+            <Label Name="lblArmor" Content="7" HorizontalAlignment="Left" Margin="217,17,0,0" VerticalAlignment="Top" Width="27" Height="21" FontSize="9" FontWeight="Bold"/>
+            <Label Name="lblInitiative" Content="16" HorizontalAlignment="Left" Margin="217,30,0,0" VerticalAlignment="Top" Width="27" Height="20" FontSize="9" FontWeight="Bold"/>
+            <Label Name="lblSpeed" Content="23" HorizontalAlignment="Left" Margin="217,45,0,0" VerticalAlignment="Top" Width="27" Height="21" FontSize="9" FontWeight="Bold"/>
 
             <Button Name="charInfo" Content="More Info" HorizontalAlignment="Left" Height="15" Margin="175,95,0,0" VerticalAlignment="Top" Width="63" Click="ButtonInfo_Click" FontSize="8"/>
         </Grid>

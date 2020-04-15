@@ -52,6 +52,14 @@ namespace DNDTools
             }
         }
 
+        private void KeyBoardConnect_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                ButtonConnect_Click(sender, e);
+            }
+        }
+
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             parent.Show();
@@ -65,7 +73,7 @@ namespace DNDTools
 
             newRoom.Show();
 
-            this.Close();
+            this.Visibility = Visibility.Hidden;
             parent.Close();
         }
     }

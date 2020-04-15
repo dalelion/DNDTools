@@ -36,7 +36,7 @@
             <Button Name="btnBack" Content="Home" HorizontalAlignment="Left" Margin="340,339,0,0" VerticalAlignment="Top" Width="103" Height="35"/>
             <Button Name="btnConnect" Content="Connect" HorizontalAlignment="Left" Margin="494,180,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525" Click="ButtonConnect_Click"/>
             <Button Content="Create" HorizontalAlignment="Left" Margin="494,256,0,0" VerticalAlignment="Top" Width="101" Height="33" RenderTransformOrigin="0.654,0.525" Click="ButtonCreate_Click"/>
-            <TextBox Name="RoomCode" HorizontalAlignment="Left" Height="33" Margin="159,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
+            <TextBox Name="RoomCode" HorizontalAlignment="Left" Height="33" Margin="159,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284" KeyDown="KeyBoardConnect_KeyDown"/>
         </Grid>
 
     </Grid>

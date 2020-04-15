@@ -38,6 +38,10 @@ namespace DNDTools {
                 WisLbl.Content = "" + player.getBaseStat(4);
                 ChaLbl.Content = "" + player.getBaseStat(5);
 
+                lblArmor.Content = player.getArmor();
+                lblInitiative.Content = player.getVariableStat(1);
+                lblSpeed.Content = player.getSpeed();
+
                 //Changes the text in Character info to match the character's changing stats
                 if (player.getVariableStat(0) > 0)
                     StrVarLbl.Content = "(+" + player.getVariableStat(0) + ")";

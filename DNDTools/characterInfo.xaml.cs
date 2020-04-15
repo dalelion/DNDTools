@@ -19,6 +19,10 @@ namespace DNDTools
             parent = myParent;
             player = myPlayer;
 
+            txtClass.Text = player.getClass();
+            txtRace.Text = player.getRace();
+            txtFaction.Text = player.getFaction();
+
             lblStrConst.Content = parent.StrLbl.Content;
             lblDexConst.Content = parent.DexLbl.Content;
             lblConConst.Content = parent.ConLbl.Content;
@@ -35,9 +39,87 @@ namespace DNDTools
 
             //Numbers in parenthesis increase/decrease every 2 values, the MAIN values should be controlled by the player
 
-            txtClass.Text = player.getClass();
-            txtRace.Text = player.getRace();
-            txtFaction.Text = player.getFaction();
+            lblArmorConst.Content = parent.lblArmor.Content;
+            lblInitiativeConst.Content = player.getVariableStat(1);
+            lblSpeedConst.Content = parent.lblSpeed.Content;
+
+            if (player.getVariableStat(0) > 0)
+            {
+                lblAthleticsConst.Content = "+" + player.getVariableStat(0);
+            }
+            else 
+            {
+                lblAthleticsConst.Content = player.getVariableStat(0);
+            }
+
+            if (player.getVariableStat(1) > 0)
+            {
+                lblAcrobaticsConst.Content = "+" + player.getVariableStat(1);
+                lblSleightConst.Content = "+" + player.getVariableStat(1);
+                lblStealthConst.Content = "+" + player.getVariableStat(1);
+            }
+            else
+            { 
+                lblAcrobaticsConst.Content = player.getVariableStat(1);
+                lblSleightConst.Content = player.getVariableStat(1);
+                lblStealthConst.Content = player.getVariableStat(1);
+            }
+
+            if (player.getVariableStat(3) > 0)
+            {
+                lblArcanaConst.Content = "+" + player.getVariableStat(3);
+                lblHistoryConst.Content = "+" + player.getVariableStat(3);
+                lblInvestigationConst.Content = "+" + player.getVariableStat(3);
+                lblNatureConst.Content = "+" + player.getVariableStat(3);
+                lblReligionConst.Content = "+" + player.getVariableStat(3);
+            }
+            else
+            {
+                lblArcanaConst.Content = player.getVariableStat(3);
+                lblHistoryConst.Content = player.getVariableStat(3);
+                lblInvestigationConst.Content = player.getVariableStat(3);
+                lblNatureConst.Content = player.getVariableStat(3);
+                lblReligionConst.Content = player.getVariableStat(3);
+            }
+
+            if (player.getVariableStat(4) > 0)
+            {
+                lblAnimalConst.Content = "+" + player.getVariableStat(4);
+                lblInsightConst.Content = "+" + player.getVariableStat(4);
+                lblMedicineConst.Content = "+" + player.getVariableStat(4);
+                lblPerceptionConst.Content = "+" + player.getVariableStat(4);
+                lblSurvivalConst.Content = "+" + player.getVariableStat(4);
+            }
+            else
+            { 
+                lblAnimalConst.Content = player.getVariableStat(4);
+                lblInsightConst.Content = player.getVariableStat(4);
+                lblMedicineConst.Content = player.getVariableStat(4);
+                lblPerceptionConst.Content = player.getVariableStat(4);
+                lblSurvivalConst.Content = player.getVariableStat(4);
+            }
+
+            if (player.getVariableStat(5) > 0)
+            {
+                lblDeceptionConst.Content = "+" + player.getVariableStat(5);
+                lblIntimidationConst.Content = "+" + player.getVariableStat(5);
+                lblPerformanceConst.Content = "+" + player.getVariableStat(5);
+                lblPersuasionConst.Content = "+" + player.getVariableStat(5);
+            }
+            else
+            {
+                lblDeceptionConst.Content = player.getVariableStat(5);
+                lblIntimidationConst.Content = player.getVariableStat(5);
+                lblPerformanceConst.Content = player.getVariableStat(5);
+                lblPersuasionConst.Content = player.getVariableStat(5);
+            }
+
+            //Skills based on Base Stats
+            //Skill values are based on the VAR stats of the player
+
+            //Initiative is based on DEX
+
+            //Speed is based on 5, start at 30
         }
 
         private void btStrUp_Click(object sender, RoutedEventArgs e)
@@ -61,6 +143,7 @@ namespace DNDTools
                 {
                     lblStrConst.Content = "" + tempBase;
                     lblStrVar.Content = "(+" + tempVar + ")";
+                    lblAthleticsConst.Content = "+" + tempVar;
 
                     parent.StrLbl.Content = "" + tempBase;
                     parent.StrVarLbl.Content = lblStrVar.Content;
@@ -69,6 +152,7 @@ namespace DNDTools
                 {
                     lblStrConst.Content = "" + tempBase;
                     lblStrVar.Content = "(" + tempVar + ")";
+                    lblAthleticsConst.Content = tempVar;
 
                     parent.StrLbl.Content = "" + tempBase;
                     parent.StrVarLbl.Content = lblStrVar.Content;
@@ -98,6 +182,8 @@ namespace DNDTools
                     lblStrConst.Content = "" + tempBase;
                     lblStrVar.Content = "(+" + tempVar + ")";
 
+                    lblAthleticsConst.Content = "+" + tempVar;
+
                     parent.StrLbl.Content = "" + tempBase;
                     parent.StrVarLbl.Content = lblStrVar.Content;
                 }
@@ -105,6 +191,8 @@ namespace DNDTools
                 {
                     lblStrConst.Content = "" + tempBase;
                     lblStrVar.Content = "(" + tempVar + ")";
+
+                    lblAthleticsConst.Content = tempVar;
 
                     parent.StrLbl.Content = "" + tempBase;
                     parent.StrVarLbl.Content = lblStrVar.Content;
@@ -134,6 +222,10 @@ namespace DNDTools
                     lblDexConst.Content = "" + tempBase;
                     lblDexVar.Content = "(+" + tempVar + ")";
 
+                    lblAcrobaticsConst.Content = "+" + tempVar;
+                    lblSleightConst.Content = "+" + tempVar;
+                    lblStealthConst.Content = "+" + tempVar;
+
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
                 }
@@ -141,6 +233,10 @@ namespace DNDTools
                 {
                     lblDexConst.Content = "" + tempBase;
                     lblDexVar.Content = "(" + tempVar + ")";
+
+                    lblAcrobaticsConst.Content = tempVar;
+                    lblSleightConst.Content = tempVar;
+                    lblStealthConst.Content = tempVar;
 
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
@@ -170,6 +266,10 @@ namespace DNDTools
                     lblDexConst.Content = "" + tempBase;
                     lblDexVar.Content = "(+" + tempVar + ")";
 
+                    lblAcrobaticsConst.Content = "+" + tempVar;
+                    lblSleightConst.Content = "+" + tempVar;
+                    lblStealthConst.Content = "+" + tempVar;
+
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
                 }
@@ -177,6 +277,10 @@ namespace DNDTools
                 {
                     lblDexConst.Content = "" + tempBase;
                     lblDexVar.Content = "(" + tempVar + ")";
+
+                    lblAcrobaticsConst.Content = tempVar;
+                    lblSleightConst.Content = tempVar;
+                    lblStealthConst.Content = tempVar;
 
                     parent.DexLbl.Content = "" + tempBase;
                     parent.DexVarLbl.Content = lblDexVar.Content;
@@ -278,6 +382,12 @@ namespace DNDTools
                     lblIntConst.Content = "" + tempBase;
                     lblIntVar.Content = "(+" + tempVar + ")";
 
+                    lblArcanaConst.Content = "+" + tempVar;
+                    lblHistoryConst.Content = "+" + tempVar;
+                    lblInvestigationConst.Content = "+" + tempVar;
+                    lblNatureConst.Content = "+" + tempVar;
+                    lblReligionConst.Content = "+" + tempVar;
+
                     parent.IntLbl.Content = "" + tempBase;
                     parent.IntVarLbl.Content = lblIntVar.Content;
                 }
@@ -285,6 +395,12 @@ namespace DNDTools
                 {
                     lblIntConst.Content = "" + tempBase;
                     lblIntVar.Content = "(" + tempVar + ")";
+
+                    lblArcanaConst.Content = tempVar;
+                    lblHistoryConst.Content = tempVar;
+                    lblInvestigationConst.Content = tempVar;
+                    lblNatureConst.Content = tempVar;
+                    lblReligionConst.Content = tempVar;
 
                     parent.IntLbl.Content = "" + tempBase;
                     parent.IntVarLbl.Content = lblIntVar.Content;
@@ -314,6 +430,12 @@ namespace DNDTools
                     lblIntConst.Content = "" + tempBase;
                     lblIntVar.Content = "(+" + tempVar + ")";
 
+                    lblArcanaConst.Content = "+" + tempVar;
+                    lblHistoryConst.Content = "+" + tempVar;
+                    lblInvestigationConst.Content = "+" + tempVar;
+                    lblNatureConst.Content = "+" + tempVar;
+                    lblReligionConst.Content = "+" + tempVar;
+
                     parent.IntLbl.Content = "" + tempBase;
                     parent.IntVarLbl.Content = lblIntVar.Content;
                 }
@@ -321,6 +443,12 @@ namespace DNDTools
                 {
                     lblIntConst.Content = "" + tempBase;
                     lblIntVar.Content = "(" + tempVar + ")";
+
+                    lblArcanaConst.Content = tempVar;
+                    lblHistoryConst.Content = tempVar;
+                    lblInvestigationConst.Content = tempVar;
+                    lblNatureConst.Content = tempVar;
+                    lblReligionConst.Content = tempVar;
 
                     parent.IntLbl.Content = "" + tempBase;
                     parent.IntVarLbl.Content = lblIntVar.Content;
@@ -350,6 +478,12 @@ namespace DNDTools
                     lblWisConst.Content = "" + tempBase;
                     lblWisVar.Content = "(+" + tempVar + ")";
 
+                    lblAnimalConst.Content = "+" + tempVar;
+                    lblInsightConst.Content = "+" + tempVar;
+                    lblMedicineConst.Content = "+" + tempVar;
+                    lblPerceptionConst.Content = "+" + tempVar;
+                    lblSurvivalConst.Content = "+" + tempVar;
+
                     parent.WisLbl.Content = "" + tempBase;
                     parent.WisVarLbl.Content = lblWisVar.Content;
                 }
@@ -357,6 +491,12 @@ namespace DNDTools
                 {
                     lblWisConst.Content = "" + tempBase;
                     lblWisVar.Content = "(" + tempVar + ")";
+
+                    lblAnimalConst.Content = tempVar;
+                    lblInsightConst.Content = tempVar;
+                    lblMedicineConst.Content = tempVar;
+                    lblPerceptionConst.Content = tempVar;
+                    lblSurvivalConst.Content = tempVar;
 
                     parent.WisLbl.Content = "" + tempBase;
                     parent.WisVarLbl.Content = lblWisVar.Content;
@@ -386,6 +526,12 @@ namespace DNDTools
                     lblWisConst.Content = "" + tempBase;
                     lblWisVar.Content = "(+" + tempVar + ")";
 
+                    lblAnimalConst.Content = "+" + tempVar;
+                    lblInsightConst.Content = "+" + tempVar;
+                    lblMedicineConst.Content = "+" + tempVar;
+                    lblPerceptionConst.Content = "+" + tempVar;
+                    lblSurvivalConst.Content = "+" + tempVar;
+
                     parent.WisLbl.Content = "" + tempBase;
                     parent.WisVarLbl.Content = lblWisVar.Content;
                 }
@@ -393,6 +539,12 @@ namespace DNDTools
                 {
                     lblWisConst.Content = "" + tempBase;
                     lblWisVar.Content = "(" + tempVar + ")";
+
+                    lblAnimalConst.Content = tempVar;
+                    lblInsightConst.Content = tempVar;
+                    lblMedicineConst.Content = tempVar;
+                    lblPerceptionConst.Content = tempVar;
+                    lblSurvivalConst.Content = tempVar;
 
                     parent.WisLbl.Content = "" + tempBase;
                     parent.WisVarLbl.Content = lblWisVar.Content;
@@ -422,6 +574,11 @@ namespace DNDTools
                     lblChaConst.Content = "" + tempBase;
                     lblChaVar.Content = "(+" + tempVar + ")";
 
+                    lblDeceptionConst.Content = "+" + tempVar;
+                    lblIntimidationConst.Content = "+" + tempVar;
+                    lblPerformanceConst.Content = "+" + tempVar;
+                    lblPersuasionConst.Content = "+" + tempVar;
+
                     parent.ChaLbl.Content = "" + tempBase;
                     parent.ChaVarLbl.Content = lblChaVar.Content;
                 }
@@ -429,6 +586,11 @@ namespace DNDTools
                 {
                     lblChaConst.Content = "" + tempBase;
                     lblChaVar.Content = "(" + tempVar + ")";
+
+                    lblDeceptionConst.Content = tempVar;
+                    lblIntimidationConst.Content = tempVar;
+                    lblPerformanceConst.Content = tempVar;
+                    lblPersuasionConst.Content = tempVar;
 
                     parent.ChaLbl.Content = "" + tempBase;
                     parent.ChaVarLbl.Content = lblChaVar.Content;
@@ -458,6 +620,11 @@ namespace DNDTools
                     lblChaConst.Content = "" + tempBase;
                     lblChaVar.Content = "(+" + tempVar + ")";
 
+                    lblDeceptionConst.Content = "+" + tempVar;
+                    lblIntimidationConst.Content = "+" + tempVar;
+                    lblPerformanceConst.Content = "+" + tempVar;
+                    lblPersuasionConst.Content = "+" + tempVar;
+
                     parent.ChaLbl.Content = "" + tempBase;
                     parent.ChaVarLbl.Content = lblChaVar.Content;
                 }
@@ -466,23 +633,71 @@ namespace DNDTools
                     lblChaConst.Content = "" + tempBase;
                     lblChaVar.Content = "(" + tempVar + ")";
 
+                    lblDeceptionConst.Content = tempVar;
+                    lblIntimidationConst.Content = tempVar;
+                    lblPerformanceConst.Content = tempVar;
+                    lblPersuasionConst.Content = tempVar;
+
                     parent.ChaLbl.Content = "" + tempBase;
                     parent.ChaVarLbl.Content = lblChaVar.Content;
                 }
             }
         }
 
-        private void TextBox_TextChanged(object sender, RoutedEventArgs e)
+        private void btArmorUp_Click(object sender, RoutedEventArgs e)
         {
-            player.setClass(txtClass.Text);
-            player.setRace(txtRace.Text);
-            player.setFaction(txtFaction.Text);
+            int tempStat = player.getArmor() + 1;
+
+            //if (tempStat <= 20) Limit is removed, find true max later
+            //{
+                player.setArmor(tempStat);
+
+                lblArmorConst.Content = "" + tempStat;
+                parent.lblArmor.Content = "" + tempStat;
+            //}
         }
 
-        private void KeyboardEnter_KeyDown(object sender, KeyEventArgs e)
+        private void btArmorDown_Click(object sender, RoutedEventArgs e)
         {
-            if (e.Key == Key.Enter)
-                TextBox_TextChanged(sender, e);
+            int tempStat = player.getArmor() - 1;
+
+            if (tempStat >= 0)
+            {
+                player.setArmor(tempStat);
+
+                lblArmorConst.Content = "" + tempStat;
+                parent.lblArmor.Content = "" + tempStat;
+            }
+        }
+
+        private void btSpeedUp_Click(object sender, RoutedEventArgs e)
+        {
+            int tempStat = player.getSpeed() + 5;
+
+            player.setSpeed(tempStat);
+
+            lblSpeedConst.Content = "" + tempStat;
+            parent.lblSpeed.Content = "" + tempStat;
+        }
+
+        private void btSpeedDown_Click(object sender, RoutedEventArgs e)
+        {
+            int tempStat = player.getSpeed() - 5;
+
+            if (tempStat >= 0)
+            {
+                player.setSpeed(tempStat);
+
+                lblSpeedConst.Content = "" + tempStat;
+                parent.lblSpeed.Content = "" + tempStat;
+            }
+        }
+
+        private void Keyboard_KeyPress(object sender, KeyEventArgs e)
+        {
+           player.setClass(txtClass.Text);
+           player.setRace(txtRace.Text);
+           player.setFaction(txtFaction.Text);
         }
     }
 }

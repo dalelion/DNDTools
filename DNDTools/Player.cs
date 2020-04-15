@@ -13,20 +13,25 @@ namespace DNDTools
         String playerRace = "";
         String playerFaction = "";
 
-        int[] playerBaseStat = {15, 14, 13, 12, 10, 8};
-        int[] playerVariableStat = {2, 2, 1, 1, 0, -1};
+        int[] playerBaseStat = { 15, 14, 13, 12, 10, 8} ;
+        int[] playerVariableStat = { 2, 2, 1, 1, 0, -1 };
+
+        int playerSpeed = 30;
+        int playerArmor = 10;
 
         //Deafult Constructor
         public Player()
         {
             name = "Adventurer";
             playerClass = "Paladin";
+            playerRace = "Human";
         }
 
         public Player(string myName)
         {
             name = myName;
             playerClass = "Paladin";
+            playerRace = "Human";
         }
 
         //Constructor for customized character
@@ -90,6 +95,26 @@ namespace DNDTools
         public void setFaction(String myFaction)
         {
             playerFaction = myFaction;
+        }
+
+        public int getSpeed()
+        {
+            return playerSpeed;
+        }
+
+        public void setSpeed(int mySpeed)
+        {
+            playerSpeed = mySpeed;
+        }
+
+        public int getArmor()
+        {
+            return playerArmor;
+        }
+
+        public void setArmor(int myArmor)
+        {
+            playerArmor = myArmor;
         }
     }
 }
