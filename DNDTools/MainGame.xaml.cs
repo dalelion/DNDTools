@@ -138,33 +138,29 @@ namespace DNDTools {
 
         }
 
+        /// <summary>
+        /// Processes request by the user.
+        /// </summary>
+        /// <param name="Command">Text command starting with '/'</param>
+        /// <returns>Command output or error message.</returns>
         private String ProcessCommand(String[] Command) {
-
-            /*switch ( Command[0] ) {
-
+            switch ( Command[0] ) {
                 case "/help":
-                    //TODO: @Noah Display commands available to users. Future work to implement this and add more commands
-                    break;
+                    return "\nThe command system is still under construction! -> Dice Rolling is available (ex. '/roll 3d6')";
                 case "/roll":
-
-                    break;
+                    if ( Command[1].Contains( 'd' ) ) {
+                        String[] DiceCommand = Command[1].Split( 'd' );
+                        Int32[] NumbersRolled = new Int32[Int32.Parse( DiceCommand[0] )];
+                        for ( int i = 0; i < Int32.Parse( DiceCommand[0] ); i++ ) {
+                            NumbersRolled[i] = DiceRoll( Int32.Parse( DiceCommand[1] ) );
+                        }
+                        return "\n> " + player.getName() + $" rolled {Command[1]} -> " + String.Join( " + ", NumbersRolled ) + $" = {NumbersRolled.Sum()}";
+                    }
+                    return "\nTry again: /roll [NumOfDice]d[NumOfSides]";
+                //Add more cases for new commands here
                 default:
-                    break;
-
-            }*/
-            if (Command[0].Equals("/help")) {
-                return "\nThe command system is still under construction! -> Dice Rolling is available (ex. '/roll 3d6')";
+                    return "\n*Error*: Command not recognized.";
             }
-            else if ( Command[0].Equals("/roll") && Command[1].Contains('d')) { //temporary rigging to make only /roll work since other commands arent implemented.
-                String[] DiceCommand = Command[1].Split( 'd' );
-                Int32[] NumbersRolled = new Int32[Int32.Parse(DiceCommand[0])];
-                for (int i = 0; i < Int32.Parse(DiceCommand[0]); i++ ) {
-                    NumbersRolled[i] = DiceRoll( Int32.Parse( DiceCommand[1] ) );
-                    
-                }
-                return "\n> " + player.getName() + $" rolled {Command[1]} -> " + String.Join( " + ", NumbersRolled ) + $" = {NumbersRolled.Sum()}";
-            }
-            return "";
         }
 
         private static Random DiceRandomizer = new Random( DateTime.Now.Millisecond );
