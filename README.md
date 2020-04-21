@@ -15,19 +15,19 @@ This tool will allow for more connection between a DM and their players than eve
 
 
 ## Features
-* New User Account Registraction
+* New User Account Registration
 * Secure Password
 * Ability to create/join a room 
-* DND software game plays with template
+* DND software game plays with a template
 * Awesome UI/UX design with the game
 * Character skill sheet tracking with the game
 * Auto dice system
 
 ## Getting Started
-Doanload the folder DNDTools and find the file DNDTools.exe
+Download the folder DNDTools and find the file DNDTools.exe
 ### Run
 Double click the DNDTools.exe to start the game
-If you've already habe an account,type in your username and password and click on "Login". If not, double click "Sign up here" to regisgter as new users. 
+If you already have an account, type in your username and password and click on "Login". If not, double click "Sign up here" to register as a new user. 
 
 ## Demo video
 
