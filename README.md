@@ -24,7 +24,7 @@ This tool will allow for more connection between a DM and their players than eve
 * Auto dice system
 
 ## Getting Started
-Download the folder DNDTools and find the file DNDTools.exe
+Download the folder "DNDTools Games" and find the file "DNDTools.exe"
 ### Run
 Double click the DNDTools.exe to start the game
 If you already have an account, type in your username and password and click on "Login". If not, double click "Sign up here" to register as a new user. 
